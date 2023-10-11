@@ -9,23 +9,19 @@ public class DialogueController : MonoBehaviour
     public string[] Sentences;  // making this string so we have multiple sentences in the dialogue
     private int Index = 0;
     public float DialogueSpeed;
-    public Animator DialogueAnimator;
-    private bool StartDialogue = true;
+
+
+    void Start()
+    {
+        
+    }
 
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
-        {   
-            if (StartDialogue)
-            {
-                DialogueAnimator.SetTrigger("Enter");
-                StartDialogue = false;
-            }
-            else
-            {
-                NextSentence();
-            }
+        {
+            NextSentence();
         }     
     }
 
@@ -36,13 +32,6 @@ public class DialogueController : MonoBehaviour
         {
             DialogueText.text = "";
             StartCoroutine(WriteSentence());
-        }
-        else
-        {
-            DialogueText.text = "";
-            DialogueAnimator.SetTrigger("Exit");
-            Index = 0;
-            StartDialogue = true;
         }
     }
 
@@ -56,6 +45,5 @@ public class DialogueController : MonoBehaviour
         }
         Index++;
     }
-
 
 }
