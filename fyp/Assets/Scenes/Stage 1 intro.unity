@@ -696,11 +696,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &298254848 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4798391336449598879, guid: 711a12efa36b04573b6ff7497ad01ea6, type: 3}
-  m_PrefabInstance: {fileID: 3285188583969970898}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &298254849 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3682257124768332097, guid: 711a12efa36b04573b6ff7497ad01ea6, type: 3}
@@ -1274,7 +1269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &806354998
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1508,15 +1503,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 807662266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81d4d8c244f08478aad4eedae7228e71, type: 3}
+  m_Script: {fileID: 11500000, guid: 3279b11284b134bb382e3fa9eda242f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterImage: {fileID: 1113820944}
-  nameBtn: {fileID: 298254848}
-  messageText: {fileID: 631204199}
-  bgBox: {fileID: 807662267}
-  introCanvas: {fileID: 258832895}
-  round2Canvas: {fileID: 997466751}
+  DialogueText: {fileID: 631204199}
+  Sentences:
+  - Welcome new hires!! As we begin our journey, we want to walk you through the
+    purpose of this. Our full time roles are quite technical, but apart from that
+    we want our employees fostering a positive attitude towards their roles and the
+    company.
+  - Our company is focused entirely on serving the community and bridging relationship
+    with our clients. Managing risk is fundamental for the company and understanding
+    the risk involved is highly important.
+  - By presenting complex concepts in a game format, new employees can grasp and
+    internalize information more efficiently, reducing the time it takes for them
+    to become fully productive in their roles. Welcome to the game!
+  DialogueSpeed: 0.02
 --- !u!1 &867423107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1573,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d4d8c244f08478aad4eedae7228e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  messages: []
+  characters: []
   characterImage: {fileID: 530785210}
   nameBtn: {fileID: 456583021}
   messageText: {fileID: 90080943}
@@ -1927,6 +1931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d4d8c244f08478aad4eedae7228e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  messages: []
+  characters: []
   characterImage: {fileID: 1160931428}
   nameBtn: {fileID: 1854456246}
   messageText: {fileID: 1756401982}
