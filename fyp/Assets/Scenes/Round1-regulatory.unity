@@ -451,64 +451,6 @@ Transform:
   m_Father: {fileID: 1131041583}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1058294857
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1058294859}
-  - component: {fileID: 1058294858}
-  m_Layer: 0
-  m_Name: Dialogue controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1058294858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058294857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84267a1f5c68242709c8b6a7dae49da9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueText: {fileID: 1131041584}
-  Sentences:
-  - Regulatory compliance is a set of rules organizations must follow to protect
-    sensitive information and human safety. Any business that works with digital
-    assets, consumer data, health regulations, employee safety, and private communications
-    is subject to regulatory compliance. Organizations that fail to comply risks
-    can be fined for violations and could lose important vendor relationships.
-  - An important compliance employees should be aware of is Know Your Customer (KYC).
-    Banks are obligated to verify the identity of their customers and gather relevant
-    information to mitigate the risk of financial crimes. Employees must follow KYC
-    procedures, collect necessary documentation, and maintain accurate customer records.
-    Collect and verify customer identification documents, assess the customer's risk
-    profile, and perform ongoing monitoring of customer activities.
-  DialogueSpeed: 0.02
---- !u!4 &1058294859
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058294857}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6280341, y: -2.2100494, z: -2.7652905}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1131041582
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +799,64 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1548918546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548918548}
+  - component: {fileID: 1548918547}
+  m_Layer: 0
+  m_Name: Dialogue Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1548918547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548918546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3279b11284b134bb382e3fa9eda242f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText: {fileID: 1131041584}
+  Sentences:
+  - 'Regulatory compliance is a set of rules organizations must follow to protect
+    sensitive information and human safety. Any business that works with digital
+    assets, consumer data, health regulations, employee safety, and private communications
+    is subject to regulatory compliance. Organizations that fail to comply risks
+    can be fined for violations and could lose important vendor relationships. '
+  - An important compliance employees should be aware of is Know Your Customer (KYC).
+    Banks are obligated to verify the identity of their customers and gather relevant
+    information to mitigate the risk of financial crimes. Employees must follow KYC
+    procedures, collect necessary documentation, and maintain accurate customer records.
+    Collect and verify customer identification documents, assess the customer's risk
+    profile, and perform ongoing monitoring of customer activities.
+  DialogueSpeed: 0.02
+--- !u!4 &1548918548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548918546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.51129246, y: -1.1481262, z: -2.7933712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1989195319
 GameObject:
   m_ObjectHideFlags: 0
