@@ -1465,7 +1465,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 699865741}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 164386356}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: Round1Scene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &699865741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1515,7 +1527,6 @@ GameObject:
   - component: {fileID: 807662267}
   - component: {fileID: 807662269}
   - component: {fileID: 807662268}
-  - component: {fileID: 807662270}
   - component: {fileID: 807662271}
   m_Layer: 5
   m_Name: DialogBox
@@ -1586,31 +1597,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807662266}
   m_CullTransparentMesh: 1
---- !u!114 &807662270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807662266}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3279b11284b134bb382e3fa9eda242f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueText: {fileID: 631204199}
-  Sentences:
-  - Our company is focused entirely on serving the community and bridging relationship
-    with our clients. Managing risk is fundamental for the company and understanding
-    the risk involved is highly important.
-  - By presenting complex concepts in a game format, new employees can grasp and
-    internalize information more efficiently, reducing the time it takes for them
-    to become fully productive in their roles. Welcome to the game!
-  - Welcome new hires!! As we begin our journey, we want to walk you through the
-    purpose of this. Our full time roles are quite technical, but apart from that
-    we want our employees fostering a positive attitude towards their roles and the
-    company.
-  DialogueSpeed: 0.02
 --- !u!114 &807662271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,10 +1621,9 @@ MonoBehaviour:
   - By presenting complex concepts in a game format, new employees can grasp and
     internalize information more efficiently, reducing the time it takes for them
     to become fully productive in their roles. Welcome to the game!
-  DialogueSpeed: 0.02
-  nextSceneBtn: {fileID: 142146330}
-  ComplianceBtns: {fileID: 1071976598}
-  DialogBox: {fileID: 0}
+  DialogueSpeed: 0
+  complianceBtns: {fileID: 1071976598}
+  dialogBox: {fileID: 807662266}
 --- !u!1 &867423107
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,14 +27,13 @@ public class SceneController : MonoBehaviour
         
     }
 
-    // private void SetObjectsActive(Canvas canvas)
-    // {
-    //     gameObject.SetActive(activeState);
-    // }
-
     public void Round2Scene()
     {
-        SceneManager.LoadScene("Round2-detrimental");
-        
+        SceneManager.LoadScene("Round2-detrimental");  
+    }
+
+    public void Round1Scene()
+    {
+        SceneManager.LoadScene("Round1-objectives");  
     }
 }

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Round2-detrimental.unity
     guid: b19055f7aa1994e2283b4fa08621d39f
+  - enabled: 1
+    path: Assets/Scenes/Round1-objectives.unity
+    guid: 848148185610340f2a185d5979ca5912
   m_configObjects: {}
