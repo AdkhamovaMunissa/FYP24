@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Round2-detrimental.unity
     guid: b19055f7aa1994e2283b4fa08621d39f
   - enabled: 1
-    path: Assets/Scenes/Round1-objectives.unity
+    path: Assets/Scenes/Round1.1-regulatory.unity
     guid: 848148185610340f2a185d5979ca5912
+  - enabled: 1
+    path: Assets/Scenes/Round1-objectives.unity
+    guid: 068ea802bd15c422b8ddf57e8e3f0457
+  - enabled: 1
+    path: Assets/Scenes/Round1.2-regulatory.unity
+    guid: fec6bfaf0aeb042f28edc85273d858ef
+  - enabled: 1
+    path: Assets/Scenes/Round1.3-regulatory.unity
+    guid: fbf1a120d038345c2bbfd8b54583864f
+  - enabled: 1
+    path: Assets/Scenes/Round1.4-regulatory 2.unity
+    guid: 9b9f83fa62ab94db3ae6a2b6a70d6a94
   m_configObjects: {}
