@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Round2-objectives.unity
     guid: dad2dcf833fc244488de515182e2a29c
+  - enabled: 1
+    path: Assets/Scenes/Round2_1.unity
+    guid: a9f15558703df4440b3a20d3eb64e753
   m_configObjects: {}

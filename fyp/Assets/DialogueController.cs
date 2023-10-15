@@ -9,7 +9,7 @@ public class DialogueController : MonoBehaviour
 {
     public TextMeshProUGUI DialogueText;    //reference to the text
     public string[] Sentences;  // making this string so we have multiple sentences in the dialogue
-    private int Index = 0;
+    public int Index = 0;
     public float DialogueSpeed;
     bool nextMessageCoroutine = false;
 

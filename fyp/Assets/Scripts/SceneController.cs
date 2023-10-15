@@ -34,4 +34,9 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Round2-objectives");
     }
+
+    public void Round2_1()
+    {
+        SceneManager.LoadScene("Round2_1");
+    }
 }

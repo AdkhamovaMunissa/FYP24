@@ -9,7 +9,7 @@ public class DialogManagerEmp : MonoBehaviour
     public TextMeshProUGUI DialogueTextManager; 
     public string[] Sentences;  // making this string so we have multiple sentences in the dialogue
     public int[] currentSpeaker; // 0 for employee, 1 for manager
-    private int Index = 0;
+    public int Index = 0;
     public float DialogueSpeed;
     bool nextMessageCoroutine = false;
 
@@ -35,8 +35,16 @@ public class DialogManagerEmp : MonoBehaviour
         dialogBoxManager = GameObject.Find("DialogBoxManager");
         dialogBoxEmp = GameObject.Find("DialogBoxEmp");
 
-        SetObjectsActive(dialogBoxManager, false);
-        SetObjectsActive(dialogBoxEmp, true);
+        if(currentSpeaker[Index] == 1)
+        {
+            SetObjectsActive(dialogBoxManager, true);
+            SetObjectsActive(dialogBoxEmp, false);   
+        }
+        else
+        {
+            SetObjectsActive(dialogBoxManager, false);
+            SetObjectsActive(dialogBoxEmp, true);
+        }
         NextSentence();
     }
 
