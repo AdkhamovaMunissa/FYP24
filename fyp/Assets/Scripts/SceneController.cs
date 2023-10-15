@@ -12,13 +12,6 @@ public class SceneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // introScene = GameObject.Find("Intro");
-        // round2Scene = GameObject.Find("Round2");
-
-        // SetObjectsActive(false, round2Scene);
-        // SetObjectsActive(true, introScene);
-        // introScene.enabled = true;
-        // round2Scene.enabled = false;
     }
 
     // Update is called once per frame
@@ -35,5 +28,10 @@ public class SceneController : MonoBehaviour
     public void Round1Scene()
     {
         SceneManager.LoadScene("Round1-objectives");  
+    }
+
+    public void Round2ObjectivesScene()
+    {
+        SceneManager.LoadScene("Round2-objectives");
     }
 }
