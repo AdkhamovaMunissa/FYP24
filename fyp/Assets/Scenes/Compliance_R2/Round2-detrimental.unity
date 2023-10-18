@@ -317,6 +317,7 @@ MonoBehaviour:
   - Hi! Nice to see you again!
   - Sure, let me go through the objectives of detrimental compliance with you
   currentSpeaker: 00000000000000000100000001000000
+  Index: 0
   DialogueSpeed: 0
   dialogBoxManager: {fileID: 1020570736}
   dialogBoxEmp: {fileID: 297731456}
@@ -980,7 +981,6 @@ GameObject:
   - component: {fileID: 1020570737}
   - component: {fileID: 1020570739}
   - component: {fileID: 1020570738}
-  - component: {fileID: 1020570740}
   m_Layer: 5
   m_Name: DialogBoxManager
   m_TagString: Untagged
@@ -1050,23 +1050,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020570736}
   m_CullTransparentMesh: 1
---- !u!114 &1020570740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020570736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3279b11284b134bb382e3fa9eda242f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueText: {fileID: 342304279}
-  Sentences:
-  - Hey! Nice to see you again!
-  - 'Sure, let me introduce you what you will learn in this section. '
-  DialogueSpeed: 0
 --- !u!1 &1153434543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226110381}
   - component: {fileID: 1226110380}
+  - component: {fileID: 1226110382}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -1370,6 +1354,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226110382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226110379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4e3546bea80498c99f1f28f7f72398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 297731456}
+  nextBtn: {fileID: 753552913}
 --- !u!1 &1260773486
 GameObject:
   m_ObjectHideFlags: 0
