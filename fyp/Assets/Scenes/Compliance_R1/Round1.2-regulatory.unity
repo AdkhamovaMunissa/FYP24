@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94580449}
   - component: {fileID: 94580450}
+  - component: {fileID: 94580451}
   m_Layer: 0
   m_Name: SceneManager (Empty)
   m_TagString: Untagged
@@ -168,6 +169,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thescenename: Round1.3-regulatory
+--- !u!114 &94580451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94580448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78b45c412bff4e18aa31ee24f765d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1548918546}
+  startBtn: {fileID: 980498215}
 --- !u!1 &635667381
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +608,7 @@ GameObject:
   - component: {fileID: 980498218}
   - component: {fileID: 980498217}
   m_Layer: 5
-  m_Name: Next (Button)
+  m_Name: StartBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
