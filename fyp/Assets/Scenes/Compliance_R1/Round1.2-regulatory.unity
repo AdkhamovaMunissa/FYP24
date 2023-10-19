@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 94580449}
   - component: {fileID: 94580450}
   - component: {fileID: 94580451}
+  - component: {fileID: 94580452}
   m_Layer: 0
   m_Name: SceneManager (Empty)
   m_TagString: Untagged
@@ -183,6 +184,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1548918546}
   startBtn: {fileID: 980498215}
+--- !u!114 &94580452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94580448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5a2dcd68c47404dbe7972d95ff22cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introScene: {fileID: 0}
+  round2Scene: {fileID: 0}
 --- !u!1 &635667381
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,9 +694,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 94580450}
-        m_TargetAssemblyTypeName: R1_2to3, Assembly-CSharp
-        m_MethodName: NextScene
+      - m_Target: {fileID: 94580452}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: Round1_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
