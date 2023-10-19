@@ -30,6 +30,26 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Round1-objectives");  
     }
 
+    public void Round1_1()
+    {
+        SceneManager.LoadScene("Round1.1-regulatory");  
+    }
+
+    public void Round1_2()
+    {
+        SceneManager.LoadScene("Round1.2-regulatory");  
+    }
+
+    public void Round1_3()
+    {
+        SceneManager.LoadScene("Round1.3-regulatory");  
+    }
+
+    public void Round1_4()
+    {
+        SceneManager.LoadScene("Round1.4-regulatory 2");  
+    }
+
     public void Round2ObjectivesScene()
     {
         SceneManager.LoadScene("Round2-objectives");
@@ -49,4 +69,6 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Round2_3");
     }
+
+    
 }
