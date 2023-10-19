@@ -1101,9 +1101,9 @@ MonoBehaviour:
   DialogueText: {fileID: 1187670392}
   Sentences:
   - 'Gain knowledge about:                             1. Maintaining a respectful
-    work environment.                                               2. Adhere to
-    ethical standards.                                        3. Exhibit appropriate
-    conduct, conflict prevention and the prevention of discrimination. '
+    work environment                                               2. Adhere to ethical
+    standards                                        3. Exhibit appropriate conduct,
+    conflict prevention and the prevention of discrimination '
   - That's it! Are you ready to dive into the game?
   Index: 0
   DialogueSpeed: 0.02

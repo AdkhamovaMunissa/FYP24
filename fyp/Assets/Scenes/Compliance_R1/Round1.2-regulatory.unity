@@ -275,8 +275,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635667381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4435234, y: 1.2604828, z: -4050}
-  m_LocalScale: {x: 601.95746, y: 41.322514, z: 45}
+  m_LocalPosition: {x: 0.91999817, y: 2.6399841, z: -4050}
+  m_LocalScale: {x: 263.59177, y: 105.14099, z: 45}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1131041583}
@@ -603,7 +603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929803368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -369.09998, y: 42.70999, z: -4050}
+  m_LocalPosition: {x: -204.33997, y: 15.549988, z: -4050}
   m_LocalScale: {x: 24.19929, y: 24.19929, z: 24.19929}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -775,16 +775,16 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 929803370}
   - {fileID: 635667383}
   - {fileID: 1989195321}
+  - {fileID: 929803370}
   m_Father: {fileID: 1174982724}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.999977, y: -190.76}
-  m_SizeDelta: {x: 569.21, y: 35.86}
+  m_AnchoredPosition: {x: -126.19, y: -158.76}
+  m_SizeDelta: {x: 252.38, y: 93.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131041584
 MonoBehaviour:
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -5.3683434, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1039,14 +1039,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1131041584}
   Sentences:
-  - Employees must comply with AML laws and regulations, perform due diligence on
-    customers, monitor transactions for suspicious activity, and report any suspicious
-    transactions to the appropriate authorities.
-  - Handle customer information and AML-related matters with utmost confidentiality.
-    Avoid disclosing sensitive information to unauthorized individuals or discussing
-    AML issues outside the necessary scope.
-  - 'When onboarding new customers or conducting transactions, employees must adhere
-    to the bank''s to customer due diligence CDD procedures. '
+  - 'As a financial institution employee, you ought to comply with Anti-money laundering
+    (AML) laws and regulations by performing diligence on our customers and clients,
+    monitoring customer activities and transactions, and reporting any suspicious
+    transactions to your above position in authority (manager). '
+  - 'Customer information must be handled with utmost confidentiality. Avoid disclosing
+    sensitive information to unauthorized individuals or discussing AML issues outside
+    the necessary scope. '
+  - "For instance, when a new customer is onboarding, employees must adhere to the
+    bank's \u201CCustomer Due Diligence\u201D (CDD) procedures before entering into
+    business relationships. "
   Index: 0
   DialogueSpeed: 0
 --- !u!4 &1548918548
@@ -1140,9 +1142,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989195319}
-  m_LocalRotation: {x: 0.048693415, y: 0.020463852, z: 0.7276484, w: 0.6839139}
-  m_LocalPosition: {x: -305.64996, y: -10.840012, z: -4044.6}
-  m_LocalScale: {x: 20.16646, y: 32.06926, z: 31.078798}
+  m_LocalRotation: {x: 0.048693404, y: 0.020463852, z: 0.7276484, w: 0.6839139}
+  m_LocalPosition: {x: -140.23999, y: -40.160004, z: -4045.0002}
+  m_LocalScale: {x: 21.174791, y: 34.31412, z: 31.078789}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1131041583}
