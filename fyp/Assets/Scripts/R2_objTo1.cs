@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Script for next button appearing at the end of the dialog
 public class R2_objTo1 : MonoBehaviour
 {
     public GameObject dialogBox;
     DialogueController dialogManager;
     public GameObject startBtn;
     
-
     // Start is called before the first frame update
     void Start()
     {
