@@ -1133,7 +1133,7 @@ MonoBehaviour:
     customer identification documents, assess the customer's risk profile, and perform
     ongoing monitoring of customer activities."
   Index: 0
-  DialogueSpeed: 0.02
+  DialogueSpeed: 0
 --- !u!4 &1548918548
 Transform:
   m_ObjectHideFlags: 0

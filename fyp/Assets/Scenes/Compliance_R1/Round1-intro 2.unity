@@ -962,7 +962,7 @@ MonoBehaviour:
   - 'Let''s dive into Regulatory Compliance, shall we? In fact, let us begin with
     the objectives of this game. '
   Index: 0
-  DialogueSpeed: 0.02
+  DialogueSpeed: 0
 --- !u!4 &1548918548
 Transform:
   m_ObjectHideFlags: 0
@@ -987,7 +987,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1618800103}
-  - component: {fileID: 1618800102}
   - component: {fileID: 1618800105}
   - component: {fileID: 1618800106}
   m_Layer: 0

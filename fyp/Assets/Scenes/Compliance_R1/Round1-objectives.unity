@@ -1049,7 +1049,7 @@ MonoBehaviour:
     2. Company confidentiality Intellectual property regulations                                                
     3. Procedures for financial reporting.       '
   Index: 0
-  DialogueSpeed: 0.02
+  DialogueSpeed: 0
 --- !u!4 &1548918548
 Transform:
   m_ObjectHideFlags: 0

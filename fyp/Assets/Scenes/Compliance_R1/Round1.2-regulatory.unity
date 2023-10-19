@@ -1048,7 +1048,7 @@ MonoBehaviour:
   - 'When onboarding new customers or conducting transactions, employees must adhere
     to the bank''s to customer due diligence CDD procedures. '
   Index: 0
-  DialogueSpeed: 0.02
+  DialogueSpeed: 0
 --- !u!4 &1548918548
 Transform:
   m_ObjectHideFlags: 0

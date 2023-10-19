@@ -1131,7 +1131,7 @@ MonoBehaviour:
     on banks for AML-related breaches. The fines can range from substantial monetary
     penalties to higher-level penalties for serious violations. '
   Index: 0
-  DialogueSpeed: 0.02
+  DialogueSpeed: 0
 --- !u!4 &1548918548
 Transform:
   m_ObjectHideFlags: 0
