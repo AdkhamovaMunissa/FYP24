@@ -337,7 +337,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9622642, g: 0.8824818, b: 0.79432184, a: 1}
+  m_Color: {r: 0.9622642, g: 0.6603691, b: 0.31318974, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1119,19 +1119,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1131041584}
   Sentences:
-  - 'Regulatory compliance is a set of rules organizations must follow to protect
-    sensitive information and human safety. Any business that works with digital
-    assets, consumer data, health regulations, employee safety, and private communications
-    is subject to regulatory compliance. Organizations that fail to comply risks
-    can be fined for violations and could lose important vendor relationships. '
-  - An important compliance employees should be aware of is Know Your Customer (KYC).
-    Banks are obligated to verify the identity of their customers and gather relevant
-    information to mitigate the risk of financial crimes. Employees must follow KYC
-    procedures, collect necessary documentation, and maintain accurate customer records.
-    Collect and verify customer identification documents, assess the customer's risk
-    profile, and perform ongoing monitoring of customer activities.
+  - Regulatory compliance is a legal obligation consisting of a set of rules and
+    criteria that organizations must follow to protect sensitive information and
+    human safety. Any legal business operations like digital assets, consumer data,
+    health regulations, employee safety, and private communications are obliged to
+    this set of policies. If the ground policies are not met, it could lead to financial
+    penalties, legal repercussions, and reputational damage.
+  - "A due-diligence function is implementing \u201CKnow Your Customer\u201D (KYC)
+    procedure. Financial institutions are mandatorily required to verify customer
+    identity by matching their information via. serious background checks. This helps
+    the bank to assess the risk associated with the customer and mitigate the risk
+    of financial crimes, if any. As an employee, you are bound to collect and verify
+    customer identification documents, assess the customer's risk profile, and perform
+    ongoing monitoring of customer activities."
   Index: 0
-  DialogueSpeed: 0.02
+  DialogueSpeed: 0
 --- !u!4 &1548918548
 Transform:
   m_ObjectHideFlags: 0
@@ -1206,7 +1208,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.9647059, g: 0.8862745, b: 0.79607844, a: 1}
+  m_Color: {r: 0.9647059, g: 0.6627451, b: 0.3137255, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

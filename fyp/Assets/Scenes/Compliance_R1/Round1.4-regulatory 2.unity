@@ -928,20 +928,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1131041584}
   Sentences:
-  - 'Employees are required to maintain confidentiality, respect the confidentiality
-    of sensitive employee information, trade secrets, and proprietary information.
-    Avoid unauthorised disclosure of confidential information that could harm the
-    bank or its employees. '
-  - 'Considering the Intellectual Property Compliance, you, as employees, are expected
-    to respect Intellectual Property Rights of customers and the company. Do not
-    engage in any unauthorized use, reproduction, or distribution of copyrighted
+  - Moving on to Workplace Confidentiality. Employees are required to respect the
+    confidentiality of sensitive employee information, trade secrets, and proprietary
+    information. Unauthorized disclosure of confidential information that could harm
+    the bank or its employees should be avoided at all costs.
+  - 'Protecting Intellectual Property is important. You, as employees, are expected
+    to respect the Intellectual Property Rights of customers and the company. Do
+    not engage in any unauthorized use, reproduction, or distribution of copyrighted
     materials or intellectual property belonging to others. Respect the intellectual
-    property rights of the bank and third parties.   '
-  - 'Lastly, corporate banks must adhere to financial reporting standards and regulations,
-    including those set by accounting bodies. Employees involved in financial reporting
-    must ensure accurate and timely reporting of financial information. '
+    property rights of the bank and third parties. '
   Index: 0
-  DialogueSpeed: 0.02
+  DialogueSpeed: 0
 --- !u!4 &1548918548
 Transform:
   m_ObjectHideFlags: 0
