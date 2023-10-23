@@ -9,16 +9,6 @@ public class SceneController : MonoBehaviour
     public Canvas introScene;
     public Canvas round2Scene;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void Round2Scene()
     {
@@ -28,6 +18,11 @@ public class SceneController : MonoBehaviour
     public void Round1Scene()
     {
         SceneManager.LoadScene("Round1-objectives");  
+    }
+
+    public void Round1_0()
+    {
+        SceneManager.LoadScene("Round1-intro 2");  
     }
 
     public void Round1_1()
