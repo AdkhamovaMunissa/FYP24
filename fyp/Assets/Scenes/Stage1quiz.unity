@@ -217,6 +217,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &10026319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -994,6 +995,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &246057020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1378,8 +1380,8 @@ RectTransform:
   m_Father: {fileID: 579951600}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.08, y: 0}
+  m_AnchorMax: {x: 0.08, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1515,6 +1517,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &513458589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1691,6 +1694,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &632647980
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1830,6 +1834,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &1143671121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2213,6 +2218,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &1418637212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2352,6 +2358,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &1496257887
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2458,7 +2465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1617258226
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2567,7 +2574,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.08, y: 1}
   m_AnchoredPosition: {x: 5, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2983,6 +2990,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &1750322806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3594,6 +3602,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a741f1a881e443449d19ac1b0e4357f, type: 3}
   - {fileID: 21300000, guid: eb36609e30d374d5bb62a4b5997d1378, type: 3}
   gameController: {fileID: 1670536077}
+  question: {fileID: 84457174}
 --- !u!61 &2021453786
 BoxCollider2D:
   m_ObjectHideFlags: 0

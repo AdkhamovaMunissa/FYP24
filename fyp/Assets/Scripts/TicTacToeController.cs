@@ -9,12 +9,15 @@ public class TicTacToeController : MonoBehaviour
     Image image;
     public Sprite[] images;
     public GameObject gameController;
+    public GameObject question;
     private ComputerPlayer computerPlayer;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         computerPlayer = gameController.GetComponent<ComputerPlayer>();
+        question.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,10 +29,12 @@ public class TicTacToeController : MonoBehaviour
     private void OnMouseDown() {
         if (computerPlayer.counter < 9)
         {
+            question.SetActive(true);
+            
             image.enabled = true;
             image.sprite = images[1];
             Debug.Log("Clicked");
-            computerPlayer.PlaceCross();
+            //computerPlayer.PlaceCross();
             computerPlayer.counter++;
             Debug.Log("Tictactoe player: " + computerPlayer.counter);
         }

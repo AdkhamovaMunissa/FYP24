@@ -37,6 +37,7 @@ public class Quiz : MonoBehaviour
             btnImage = answerBtns[index].GetComponent<Image>();
             btnImage.sprite = correctAnsSprite;
             btnImage.color = Color.white;
+            
         }
         else
         {
@@ -46,6 +47,7 @@ public class Quiz : MonoBehaviour
             btnImage = answerBtns[correctAnsIndex].GetComponent<Image>();
             btnImage.sprite = correctAnsSprite;
             btnImage.color = Color.white;
+            
         }
     }
 
