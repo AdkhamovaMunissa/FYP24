@@ -10,10 +10,6 @@ public class SceneController : MonoBehaviour
     public Canvas round2Scene;
 
 
-    public void Round2Scene()
-    {
-        SceneManager.LoadScene("Round2-detrimental");  
-    }
 
     public void Round1Scene()
     {
@@ -43,6 +39,11 @@ public class SceneController : MonoBehaviour
     public void Round1_4()
     {
         SceneManager.LoadScene("Round1.4-regulatory 2");  
+    }
+
+    public void Round2Scene()
+    {
+        SceneManager.LoadScene("Round2-detrimental");  
     }
 
     public void Round2ObjectivesScene()
