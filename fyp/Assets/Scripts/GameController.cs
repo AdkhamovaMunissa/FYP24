@@ -10,10 +10,13 @@ public class GameController : MonoBehaviour
     static int[] cellValues = new int[9];
     public Sprite crossImage;
     public Sprite tickImage;
+    public GameObject question;
+    Quiz quiz;
 
     // Start is called before the first frame update
     void Start()
     {
+        question.SetActive(false);
         for(int i=0; i<9; i++)
         {
             // boxes[i] = GameObject.Find("Token (" + (i+1) + ")").GetComponent<Button>();
@@ -71,10 +74,20 @@ public class GameController : MonoBehaviour
             Debug.Log("From Btn player: " + cellValues[index]);
             if (boxes[index] != null && cellValues[index] == -1)
             {
-                Debug.Log("Box " + (index+1) + " has been assigned correctly with a Button component.");
+                question.SetActive(true);
                 boxes[index].GetComponent<Image>().enabled = true;
-                boxes[index].GetComponent<Image>().sprite = tickImage;
-                cellValues[index] = 0;
+                Debug.Log("Box " + (index+1) + " has been assigned correctly with a Button component.");
+                if(quiz.answeredCorrectly)
+                {
+                    boxes[index].GetComponent<Image>().sprite = tickImage;
+                    cellValues[index] = 0;
+                }
+                else
+                {
+                    boxes[index].GetComponent<Image>().sprite = crossImage;
+                    cellValues[index] = 1;
+                }
+
             }
             else if (cellValues[index] >= 0){
                 Debug.Log("Works statically" + cellValues[index]);
