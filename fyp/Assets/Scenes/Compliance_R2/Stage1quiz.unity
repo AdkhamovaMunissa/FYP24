@@ -363,6 +363,8 @@ MonoBehaviour:
   defaultAnsSprite: {fileID: -245872138, guid: bb1ba0f18c251457ea7f1ccb86b68fc5, type: 3}
   correctAnsSprite: {fileID: -1790142740, guid: 86a5d21c6d50d4ad3a005df406ad217a, type: 3}
   timerSprite: {fileID: 425780405}
+  timer: {fileID: 0}
+  gameStarted: 0
 --- !u!1001 &102256137
 PrefabInstance:
   m_ObjectHideFlags: 0
