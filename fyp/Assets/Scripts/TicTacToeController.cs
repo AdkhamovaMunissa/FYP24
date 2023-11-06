@@ -11,6 +11,7 @@ public class TicTacToeController : MonoBehaviour
     public GameObject gameController;
     public GameObject question;
     private ComputerPlayer computerPlayer;
+    public int[] cellValues;
     
 
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class TicTacToeController : MonoBehaviour
     {
         computerPlayer = gameController.GetComponent<ComputerPlayer>();
         question.SetActive(false);
+        image.enabled = false;
     }
 
     // Update is called once per frame

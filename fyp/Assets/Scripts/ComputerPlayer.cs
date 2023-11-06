@@ -22,10 +22,10 @@ public class ComputerPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Clicked in update");
-        }
+        // if(Input.GetMouseButtonDown(0))
+        // {
+        //     Debug.Log("Clicked in update");
+        // }
     }
 
     public void PlaceCross() {
@@ -67,6 +67,17 @@ public class ComputerPlayer : MonoBehaviour
             }
         }
         return 9;
+    }
+
+    public void Move(int index){
+        if(!boxes[index].enabled)
+            {
+                boxes[index].enabled = true;
+                boxes[index].sprite = tickImage;
+                cellValues[index] = 0;
+                counter++;
+                Debug.Log("Button player: " + index);
+            } 
     }
 
     // private void OnMouseDown() {
