@@ -23,12 +23,19 @@ public class TimerController : MonoBehaviour
         timerValue = 0;
     }
 
+    public void ResetTimer()
+    {
+        timerValue = timeToCompleteQuestion;
+        isAnsweringQuestion = true;
+    }
+
     void UpdateTimer()
     {
-        timerValue -= Time.deltaTime;
+        // timerValue -= Time.deltaTime;
 
         if(isAnsweringQuestion)
         {
+            timerValue -= Time.deltaTime;
             if(timerValue > 0)
             {
                 fillFraction = timerValue / timeToCompleteQuestion;
@@ -36,21 +43,21 @@ public class TimerController : MonoBehaviour
             else
             {
                 isAnsweringQuestion = false;
-                timerValue = timeToShowAns;
+                //timerValue = timeToShowAns;
             }
         }
         else
         {
-            if(timerValue > 0)
-            {
-                fillFraction = timerValue / timeToShowAns;
-            }
-            else
-            {
-                isAnsweringQuestion = true;
-                timerValue = timeToCompleteQuestion;
-                loadNextQuestion = true;
-            }
+            // if(timerValue > 0)
+            // {
+            //     fillFraction = timerValue / timeToShowAns;
+            // }
+            // else
+            // {
+            //     isAnsweringQuestion = true;
+            //     timerValue = timeToCompleteQuestion;
+            //     loadNextQuestion = true;
+            // }
         }
     }
 

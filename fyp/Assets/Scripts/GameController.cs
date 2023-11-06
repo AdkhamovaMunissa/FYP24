@@ -11,12 +11,24 @@ public class GameController : MonoBehaviour
     public Sprite crossImage;
     public Sprite tickImage;
     public GameObject question;
-    Quiz quiz;
+    
+    static Quiz quiz;
+    static TimerController timer;
 
     // Start is called before the first frame update
     void Start()
     {
-        question.SetActive(false);
+        if(question != null)
+        {
+            quiz = question.GetComponent<Quiz>();
+            timer = quiz.timer;
+        }
+        else 
+        {
+            Debug.Log("question object not assigned");
+        }
+        
+        
         for(int i=0; i<9; i++)
         {
             // boxes[i] = GameObject.Find("Token (" + (i+1) + ")").GetComponent<Button>();
@@ -72,11 +84,16 @@ public class GameController : MonoBehaviour
 
     public void Move(int index){
             Debug.Log("From Btn player: " + cellValues[index]);
+            quiz.gameStarted = true;
+            
             if (boxes[index] != null && cellValues[index] == -1)
             {
-                question.SetActive(true);
+                quiz.ShowNextQuestion();
                 boxes[index].GetComponent<Image>().enabled = true;
                 Debug.Log("Box " + (index+1) + " has been assigned correctly with a Button component.");
+                while(quiz.timer.isAnsweringQuestion) {
+                    Debug.Log("Answering the question");
+                }
                 if(quiz.answeredCorrectly)
                 {
                     boxes[index].GetComponent<Image>().sprite = tickImage;

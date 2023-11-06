@@ -16,7 +16,10 @@ public class Quiz : MonoBehaviour
     [SerializeField] GameObject[] answerBtns;
     int correctAnsIndex;
     bool answeredEarly;
-    public bool answeredCorrectly;
+
+    //for game controller
+    public bool answeredCorrectly = false;
+   
 
     [Header("Answer Sprites")]
     [SerializeField] Sprite defaultAnsSprite;
@@ -25,27 +28,55 @@ public class Quiz : MonoBehaviour
 
     [Header("Timer")]
     [SerializeField] Image timerSprite;
-    TimerController timer;
+    public TimerController timer;
+
+    public bool gameStarted = false;
 
     void Start()
     {
-        timer = FindObjectOfType<TimerController>();
+        // if(gameStarted)
+        // {
+        //     questionText.enabled = true;
+        //     for (int i = 0; i < answerBtns.Length; i++)
+        //     {
+        //         answerBtns[i].gameObject.SetActive(true);
+        //     }
+        //     timer = FindObjectOfType<TimerController>();
+        // }
+        // else
+        // {
+            questionText.enabled = false;
+            for (int i = 0; i < answerBtns.Length; i++)
+            {
+                answerBtns[i].gameObject.SetActive(false);
+            }
+        // }
     }
 
     void Update()
     {
-        timerSprite.fillAmount = timer.fillFraction;
-        if(timer.loadNextQuestion)
+        if(gameStarted)
         {
-            answeredEarly = false;
-            ShowNextQuestion();
-            timer.loadNextQuestion = false;
+            questionText.enabled = true;
+            for (int i = 0; i < answerBtns.Length; i++)
+            {
+                answerBtns[i].gameObject.SetActive(true);
+            }
+            timer = FindObjectOfType<TimerController>();
+            timerSprite.fillAmount = timer.fillFraction;
+            // if(timer.loadNextQuestion)
+            // {
+            //     answeredEarly = false;
+            //     ShowNextQuestion();
+            //     timer.loadNextQuestion = false;
+            // }
+            if(!answeredEarly && !timer.isAnsweringQuestion)
+            {
+                ShowAnswer(-1);
+                ChangeButtonState(false);
+            }
         }
-        else if(!answeredEarly && !timer.isAnsweringQuestion)
-        {
-            ShowAnswer(-1);
-            ChangeButtonState(false);
-        }
+        
     }
 
     public void OnAnswerSelected(int index)
@@ -89,10 +120,12 @@ public class Quiz : MonoBehaviour
         }
     }
 
-    void ShowNextQuestion()
+    public void ShowNextQuestion()
     {
         if(questions.Count > 0)
         {
+            timer = FindObjectOfType<TimerController>();
+            timer.ResetTimer();
             ChangeButtonState(true);
             ResetButtonSprites();
             GetRandomQuestion();
@@ -100,7 +133,7 @@ public class Quiz : MonoBehaviour
         }
         else
         {
-
+            //end of quiz
         }
          
     }
