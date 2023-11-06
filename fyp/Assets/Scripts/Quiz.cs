@@ -168,5 +168,16 @@ public class Quiz : MonoBehaviour
         }
     }
 
+    private IEnumerator WhileAnswering()
+    {
+        while(timer.isAnsweringQuestion)
+        {
+            Debug.Log("Condition not met. Pausing...");
+
+            yield return null;
+        }
+        Debug.Log("Condition met. Resuming...");
+    }
+
 
 }

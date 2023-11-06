@@ -79,7 +79,8 @@ public class GameController : MonoBehaviour
                 GameOver();
             }
         }
-        
+
+
     }
 
     public void Move(int index){
@@ -89,11 +90,11 @@ public class GameController : MonoBehaviour
             if (boxes[index] != null && cellValues[index] == -1)
             {
                 quiz.ShowNextQuestion();
+                //StartCoroutine(WhileAnswering());
                 boxes[index].GetComponent<Image>().enabled = true;
                 Debug.Log("Box " + (index+1) + " has been assigned correctly with a Button component.");
-                while(quiz.timer.isAnsweringQuestion) {
-                    Debug.Log("Answering the question");
-                }
+                Debug.Log("isAnswering questions " + quiz.timer.isAnsweringQuestion);
+                
                 if(quiz.answeredCorrectly)
                 {
                     boxes[index].GetComponent<Image>().sprite = tickImage;
@@ -117,5 +118,16 @@ public class GameController : MonoBehaviour
         {
             boxes[i].enabled = false;
         }
+    }
+
+    private IEnumerator WhileAnswering()
+    {
+        while(quiz.timer.isAnsweringQuestion)
+        {
+            Debug.Log("Condition not met. Pausing...");
+
+            yield return null;
+        }
+        Debug.Log("Condition met. Resuming...");
     }
 }
