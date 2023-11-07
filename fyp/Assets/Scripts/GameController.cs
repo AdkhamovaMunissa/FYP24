@@ -89,28 +89,47 @@ public class GameController : MonoBehaviour
             
             if (boxes[index] != null && cellValues[index] == -1)
             {
-                quiz.ShowNextQuestion();
+                quiz.ShowNextQuestion(index);
                 //StartCoroutine(WhileAnswering());
                 boxes[index].GetComponent<Image>().enabled = true;
                 Debug.Log("Box " + (index+1) + " has been assigned correctly with a Button component.");
                 Debug.Log("isAnswering questions " + quiz.timer.isAnsweringQuestion);
                 
-                if(quiz.answeredCorrectly)
-                {
-                    boxes[index].GetComponent<Image>().sprite = tickImage;
-                    cellValues[index] = 0;
-                }
-                else
-                {
-                    boxes[index].GetComponent<Image>().sprite = crossImage;
-                    cellValues[index] = 1;
-                }
+                // if(quiz.answeredCorrectly)
+                // {
+                //     boxes[index].GetComponent<Image>().sprite = tickImage;
+                //     cellValues[index] = 0;
+                // }
+                // else
+                // {
+                //     boxes[index].GetComponent<Image>().sprite = crossImage;
+                //     cellValues[index] = 1;
+                // }
 
             }
             else if (cellValues[index] >= 0){
                 Debug.Log("Works statically" + cellValues[index]);
             }
              
+    }
+
+    public void PlaceMark(int index, bool correct)
+    {
+        //increase the opacity of the mark
+        Color color = boxes[index].GetComponent<Image>().color;
+        color.a = 1;
+        boxes[index].GetComponent<Image>().color = color;
+
+        if(correct)
+        {
+            boxes[index].GetComponent<Image>().sprite = tickImage;
+            cellValues[index] = 0;
+        }
+        else
+        {
+            boxes[index].GetComponent<Image>().sprite = crossImage;
+            cellValues[index] = 1;
+        }
     }
 
     public void GameOver() {

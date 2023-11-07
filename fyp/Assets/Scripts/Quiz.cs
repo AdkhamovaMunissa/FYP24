@@ -19,6 +19,7 @@ public class Quiz : MonoBehaviour
 
     //for game controller
     public bool answeredCorrectly = false;
+    GameController gameController;
    
 
     [Header("Answer Sprites")]
@@ -31,6 +32,9 @@ public class Quiz : MonoBehaviour
     public TimerController timer;
 
     public bool gameStarted = false;
+
+    //index of the current box
+    int currentBox = -1;
 
     void Start()
     {
@@ -63,6 +67,7 @@ public class Quiz : MonoBehaviour
                 answerBtns[i].gameObject.SetActive(true);
             }
             timer = FindObjectOfType<TimerController>();
+            gameController = FindObjectOfType<GameController>();
             timerSprite.fillAmount = timer.fillFraction;
             // if(timer.loadNextQuestion)
             // {
@@ -89,10 +94,19 @@ public class Quiz : MonoBehaviour
 
     void ShowAnswer(int index)
     {
+
         Image btnImage;
         if(index == currentQuestion.GetCorrectAnswerIndex())
         {
             questionText.text = "Correct!";
+
+            Debug.Log("Currentbox: " + currentBox);
+            if(currentBox >= 0)
+            {
+                gameController.PlaceMark(currentBox, true);
+            }
+            
+
             answeredCorrectly = true;
             btnImage = answerBtns[index].GetComponent<Image>();
             btnImage.sprite = correctAnsSprite;
@@ -101,6 +115,13 @@ public class Quiz : MonoBehaviour
         }
         else
         {
+            Debug.Log("Currentbox: " + currentBox);
+            if(currentBox >= 0)
+            {
+                gameController.PlaceMark(currentBox, false);
+            }
+
+
             answeredCorrectly = false;
             correctAnsIndex = currentQuestion.GetCorrectAnswerIndex();
             string correctAnswer = currentQuestion.GetAnswer(correctAnsIndex);
@@ -120,8 +141,10 @@ public class Quiz : MonoBehaviour
         }
     }
 
-    public void ShowNextQuestion()
+    public void ShowNextQuestion(int index)
     {
+        currentBox = index;
+
         if(questions.Count > 0)
         {
             timer = FindObjectOfType<TimerController>();

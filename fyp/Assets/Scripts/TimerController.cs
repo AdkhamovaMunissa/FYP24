@@ -11,11 +11,12 @@ public class TimerController : MonoBehaviour
     public float fillFraction;
 
     public bool isAnsweringQuestion;
-    float timerValue;
+    public float timerValue;
 
     void Update()
     {
         UpdateTimer();
+        Debug.Log("Answering: " + isAnsweringQuestion);
     }
 
     public void CancelTimer()
