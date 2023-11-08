@@ -79,6 +79,12 @@ public class Quiz : MonoBehaviour
             {
                 ShowAnswer(-1);
                 ChangeButtonState(false);
+
+                Debug.Log("Currentbox: " + currentBox);
+                if(currentBox >= 0)
+                {
+                    gameController.PlaceMark(currentBox, false);
+                }
             }
         }
         
