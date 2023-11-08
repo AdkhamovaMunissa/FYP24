@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameController : MonoBehaviour
     static int[] cellValues = new int[9];
     public Sprite crossImage;
     public Sprite tickImage;
+    public TextMeshProUGUI sceneTitle;
     public GameObject question;
     
     static Quiz quiz;
@@ -57,7 +59,7 @@ public class GameController : MonoBehaviour
                 if (cellValues[row] == player && cellValues[row + 1] == player && cellValues[row + 2] == player)
                 {
                     Debug.Log("Player " + player + "wins"); // Player has won in the current row
-                    GameOver();
+                    GameOver(player);
                 }
             }
 
@@ -67,7 +69,7 @@ public class GameController : MonoBehaviour
                 if (cellValues[col] == player && cellValues[col + 3] == player && cellValues[col + 6] == player)
                 {
                     Debug.Log("Player " + player + "wins"); // Player has won in the current column
-                    GameOver();
+                    GameOver(player);
                 }
             }
 
@@ -76,7 +78,7 @@ public class GameController : MonoBehaviour
                 (cellValues[2] == player && cellValues[4] == player && cellValues[6] == player))
             {
                 Debug.Log("Player " + player + "wins"); // Player has won in any of the diagonals
-                GameOver();
+                GameOver(player);
             }
         }
 
@@ -132,10 +134,19 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void GameOver() {
+    public void GameOver(int winner) {
         for(int i=0; i<9; i++)
         {
             boxes[i].enabled = false;
+        }
+
+        if(winner == 0)
+        {
+            sceneTitle.text = "You won! Congratulations!";
+        }
+        else
+        {
+            sceneTitle.text = "You lost, try again!";
         }
     }
 

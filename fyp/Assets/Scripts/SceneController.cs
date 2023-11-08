@@ -66,5 +66,15 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Round2_3");
     }
 
+    public void Round2_gameIntro()
+    {
+        SceneManager.LoadScene("Round2_gameIntro");
+    }
+
+    public void Stage1quiz()
+    {
+        SceneManager.LoadScene("Stage1quiz");
+    }
+
     
 }
