@@ -153,6 +153,7 @@ public class Quiz : MonoBehaviour
 
         if(questions.Count > 0)
         {
+            answeredEarly = false;
             timer = FindObjectOfType<TimerController>();
             timer.ResetTimer();
             ChangeButtonState(true);
@@ -197,16 +198,7 @@ public class Quiz : MonoBehaviour
         }
     }
 
-    private IEnumerator WhileAnswering()
-    {
-        while(timer.isAnsweringQuestion)
-        {
-            Debug.Log("Condition not met. Pausing...");
-
-            yield return null;
-        }
-        Debug.Log("Condition met. Resuming...");
-    }
+    
 
 
 }

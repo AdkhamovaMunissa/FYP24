@@ -10,6 +10,10 @@ public class SceneController : MonoBehaviour
     public Canvas round2Scene;
 
 
+    public void Stage1intro()
+    {
+        SceneManager.LoadScene("Stage1 intro");
+    }
 
     public void Round1Scene()
     {
@@ -66,15 +70,14 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Round2_3");
     }
 
-    public void Round2_gameInro()
+    public void Round2_gameIntro()
     {
-        SceneManager.LoadScene("Round2_gameInro");
+        SceneManager.LoadScene("Round2_gameIntro");
     }
 
     public void Stage1quiz()
     {
         SceneManager.LoadScene("Stage1quiz");
     }
-
     
 }

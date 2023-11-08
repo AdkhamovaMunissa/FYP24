@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -11,13 +12,21 @@ public class GameController : MonoBehaviour
     public Sprite crossImage;
     public Sprite tickImage;
     public GameObject question;
+
+    [Header("Windows")]
+    [SerializeField] GameObject gameWindow;
+    [SerializeField] GameObject gameOverWindow;
+    [SerializeField] TextMeshProUGUI winMessage;
     
     static Quiz quiz;
     static TimerController timer;
 
+
     // Start is called before the first frame update
     void Start()
     {
+        
+
         if(question != null)
         {
             quiz = question.GetComponent<Quiz>();
@@ -39,6 +48,9 @@ public class GameController : MonoBehaviour
     }
 
     private void Awake() {
+        gameWindow.SetActive(true);
+        gameOverWindow.SetActive(false);
+        
         for(int i=0; i<9; i++)
         {
             boxes[i] = GameObject.Find("Token (" + (i+1) + ")").GetComponent<Button>();
@@ -57,7 +69,7 @@ public class GameController : MonoBehaviour
                 if (cellValues[row] == player && cellValues[row + 1] == player && cellValues[row + 2] == player)
                 {
                     Debug.Log("Player " + player + "wins"); // Player has won in the current row
-                    GameOver();
+                    GameOver(player);
                 }
             }
 
@@ -67,7 +79,7 @@ public class GameController : MonoBehaviour
                 if (cellValues[col] == player && cellValues[col + 3] == player && cellValues[col + 6] == player)
                 {
                     Debug.Log("Player " + player + "wins"); // Player has won in the current column
-                    GameOver();
+                    GameOver(player);
                 }
             }
 
@@ -76,7 +88,7 @@ public class GameController : MonoBehaviour
                 (cellValues[2] == player && cellValues[4] == player && cellValues[6] == player))
             {
                 Debug.Log("Player " + player + "wins"); // Player has won in any of the diagonals
-                GameOver();
+                GameOver(player);
             }
         }
 
@@ -132,21 +144,25 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void GameOver() {
+    public void GameOver(int winner) {
         for(int i=0; i<9; i++)
         {
             boxes[i].enabled = false;
         }
-    }
 
-    private IEnumerator WhileAnswering()
-    {
-        while(quiz.timer.isAnsweringQuestion)
+        gameWindow.SetActive(false);
+        gameOverWindow.SetActive(true);
+
+        if(winner == 0)
         {
-            Debug.Log("Condition not met. Pausing...");
-
-            yield return null;
+            winMessage.text = "Congratulations! You mastered this round!";
         }
-        Debug.Log("Condition met. Resuming...");
+        else 
+        {
+            winMessage.text = "Sorry, you lost :(";
+        }
+
     }
+
+    
 }
