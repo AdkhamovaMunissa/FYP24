@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour
     private void Awake() {
         gameWindow.SetActive(true);
         gameOverWindow.SetActive(false);
-        
+
         for(int i=0; i<9; i++)
         {
             boxes[i] = GameObject.Find("Token (" + (i+1) + ")").GetComponent<Button>();
@@ -101,6 +101,7 @@ public class GameController : MonoBehaviour
             
             if (boxes[index] != null && cellValues[index] == -1)
             {
+                SetGrid(false);
                 quiz.ShowNextQuestion(index);
                 //StartCoroutine(WhileAnswering());
                 boxes[index].GetComponent<Image>().enabled = true;
@@ -142,13 +143,13 @@ public class GameController : MonoBehaviour
             boxes[index].GetComponent<Image>().sprite = crossImage;
             cellValues[index] = 1;
         }
+
+        SetGrid(true);
     }
 
     public void GameOver(int winner) {
-        for(int i=0; i<9; i++)
-        {
-            boxes[i].enabled = false;
-        }
+        
+        SetGrid(false);
 
         gameWindow.SetActive(false);
         gameOverWindow.SetActive(true);
@@ -162,6 +163,14 @@ public class GameController : MonoBehaviour
             winMessage.text = "Sorry, you lost :(";
         }
 
+    }
+
+    public void SetGrid(bool state)
+    {
+        for(int i=0; i<9; i++)
+        {
+            boxes[i].enabled = state;
+        }
     }
 
     
