@@ -15,6 +15,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Stage1 intro");
     }
 
+    public void Stage1_rounds()
+    {
+        SceneManager.LoadScene("Stage1_rounds");
+    }
+
     public void Round1Scene()
     {
         SceneManager.LoadScene("Round1-objectives");  

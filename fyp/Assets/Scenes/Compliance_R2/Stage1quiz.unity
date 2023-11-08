@@ -3393,7 +3393,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1957343439}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: Stage1intro
+        m_MethodName: Stage1_rounds
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

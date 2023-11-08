@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Compliance_R2/Stage1quiz.unity
     guid: 4bc922bd499c8483e9a99c5d80ae8704
+  - enabled: 1
+    path: Assets/Scenes/Stage1_rounds.unity
+    guid: 2f959bc166d394bccb63540a2f3b9fa8
   m_configObjects: {}
