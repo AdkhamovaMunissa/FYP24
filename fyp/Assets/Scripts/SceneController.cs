@@ -26,14 +26,59 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Round1.1-regulatory");  
     }
 
+    public void MG_intro_1()
+    {
+        SceneManager.LoadScene("MG_intro_1");  
+    }    
+
+    public void MiniGame_1()
+    {
+        SceneManager.LoadScene("MiniGame_1");  
+    }  
+
+    public void MG_Congr_1()
+    {
+        SceneManager.LoadScene("MG_Congr_1");  
+    } 
+
     public void Round1_2()
     {
         SceneManager.LoadScene("Round1.2-regulatory");  
     }
 
+    public void MG_intro_2()
+    {
+        SceneManager.LoadScene("MG_intro_2");  
+    }    
+
+    public void MiniGame_2()
+    {
+        SceneManager.LoadScene("MiniGame_2");  
+    }  
+
+    public void MG_Congr_2()
+    {
+        SceneManager.LoadScene("MG_Congr_2"); 
+    }
+
     public void Round1_3()
     {
         SceneManager.LoadScene("Round1.3-regulatory");  
+    }
+
+    public void MG_intro_3()
+    {
+        SceneManager.LoadScene("MG_intro_3");  
+    }    
+
+    public void MiniGame_3()
+    {
+        SceneManager.LoadScene("MiniGame_3");  
+    }  
+
+    public void MG_Congr_3()
+    {
+        SceneManager.LoadScene("MG_Congr_3"); 
     }
 
     public void Round1_4()
@@ -75,6 +120,5 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Stage1quiz");
     }
-
     
 }
