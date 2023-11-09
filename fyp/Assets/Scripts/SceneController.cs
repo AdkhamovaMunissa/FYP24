@@ -101,9 +101,39 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Round2_1");
     }
 
+    public void MG2_intro_1()
+    {
+        SceneManager.LoadScene("MG2_intro_1");  
+    }    
+
+    public void MiniGame2_1()
+    {
+        SceneManager.LoadScene("MiniGame2_1");  
+    }  
+
+    public void MG2_Congr_1()
+    {
+        SceneManager.LoadScene("MG2_Congr_1"); 
+    }
+
     public void Round2_2()
     {
         SceneManager.LoadScene("Round2_2");
+    }
+
+    public void MG2_intro_2()
+    {
+        SceneManager.LoadScene("MG2_intro_2");  
+    }    
+
+    public void MiniGame2_2()
+    {
+        SceneManager.LoadScene("MiniGame2_2");  
+    }  
+
+    public void MG2_Congr_2()
+    {
+        SceneManager.LoadScene("MG2_Congr_2"); 
     }
 
     public void Round2_3()

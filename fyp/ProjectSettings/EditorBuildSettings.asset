@@ -74,4 +74,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Compliance_R1/MiniGame_3.unity
     guid: 7fdedcf59de9342fa92030348994d491
+  - enabled: 1
+    path: Assets/Scenes/Compliance_R2/MG2_Congr_1.unity
+    guid: 3fba5ce0e6fdd4d93a67583ab133077e
+  - enabled: 1
+    path: Assets/Scenes/Compliance_R2/MG2_intro_1.unity
+    guid: 9788eda96359248c9b5fd26b59075c59
+  - enabled: 1
+    path: Assets/Scenes/Compliance_R2/MiniGame2_1.unity
+    guid: bd0cc2c5114a7451c85b065c6c9fb565
+  - enabled: 1
+    path: Assets/Scenes/Compliance_R2/MG2_Congr_2.unity
+    guid: eebf4ad2106bb4622b63bfa101cb80f5
+  - enabled: 1
+    path: Assets/Scenes/Compliance_R2/MG2_intro_2.unity
+    guid: f0018270e433844deb51ea3b348e99aa
+  - enabled: 1
+    path: Assets/Scenes/Compliance_R2/MiniGame2_2.unity
+    guid: fae1405706b8340f89cd5df9c9d2f357
   m_configObjects: {}
