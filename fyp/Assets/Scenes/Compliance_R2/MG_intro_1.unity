@@ -554,7 +554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue
+  m_text: Begin!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -806,8 +806,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1893849355}
   Sentences:
-  - Congatulations!!
-  - Now, back to learning!
+  - Well done!
+  - 'Let''s play a mini game to revise what we''ve just learned. '
+  - Shall we play?
   Index: 0
   DialogueSpeed: 0.02
 --- !u!4 &1769629388
@@ -1011,14 +1012,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.44624698, g: 0.36078432, b: 0.47058824, a: 1}
+  m_Color: {r: 0.47058824, g: 0.36078432, b: 0.36078432, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb2ba0fb107bc42f3a4cd398a17ae785, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ad9b6d2e6f27449f925ae58509b4459, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1122,7 +1123,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1499945130}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: Round1_4
+        m_MethodName: MiniGame_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

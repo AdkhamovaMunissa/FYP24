@@ -806,7 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1893849355}
   Sentences:
-  - Let's test our learning. Mini Game time!
+  - Let's test our learning. Mini Game time!!
   - Shall we play?
   Index: 0
   DialogueSpeed: 0.02
