@@ -83,7 +83,7 @@ public class Quiz : MonoBehaviour
                 Debug.Log("Currentbox: " + currentBox);
                 if(currentBox >= 0)
                 {
-                    gameController.PlaceMark(currentBox, false);
+                    gameController.PlaceMark(currentBox, false, 0);
                 }
             }
         }
@@ -109,7 +109,7 @@ public class Quiz : MonoBehaviour
             Debug.Log("Currentbox: " + currentBox);
             if(currentBox >= 0)
             {
-                gameController.PlaceMark(currentBox, true);
+                gameController.PlaceMark(currentBox, true, 9 - questions.Count);
             }
             
 
@@ -124,7 +124,7 @@ public class Quiz : MonoBehaviour
             Debug.Log("Currentbox: " + currentBox);
             if(currentBox >= 0)
             {
-                gameController.PlaceMark(currentBox, false);
+                gameController.PlaceMark(currentBox, false, 0);
             }
 
 

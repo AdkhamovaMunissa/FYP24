@@ -17,7 +17,11 @@ public class GameController : MonoBehaviour
     [SerializeField] GameObject gameWindow;
     [SerializeField] GameObject gameOverWindow;
     [SerializeField] GameObject pauseWindow;
+
+    [Header("Win elements")]
     [SerializeField] TextMeshProUGUI winMessage;
+    [SerializeField] GameObject starsBar;
+    private SpriteRenderer[] stars;
 
     [Header("Window Btns")]
     [SerializeField] Button pauseBtn;
@@ -57,11 +61,15 @@ public class GameController : MonoBehaviour
         gameWindow.SetActive(true);
         gameOverWindow.SetActive(false);
         pauseWindow.SetActive(false);
+
+
         for(int i=0; i<9; i++)
         {
             boxes[i] = GameObject.Find("Token (" + (i+1) + ")").GetComponent<Button>();
             cellValues[i] = -1;
         }
+
+        stars = starsBar.GetComponentsInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -132,21 +140,49 @@ public class GameController : MonoBehaviour
              
     }
 
-    public void PlaceMark(int index, bool correct)
+    public void PlaceMark(int index, bool correct, int questions)
     {
         //increase the opacity of the mark
         Color color = boxes[index].GetComponent<Image>().color;
         color.a = 1;
         boxes[index].GetComponent<Image>().color = color;
 
+        stars = starsBar.GetComponentsInChildren<SpriteRenderer>();
+
         if(correct)
         {
             boxes[index].GetComponent<Image>().sprite = tickImage;
             cellValues[index] = 0;
+
+            if(questions <= 4)
+            {
+                stars[0].color = Color.white;
+                stars[1].color = Color.white;
+                stars[2].color = Color.white;
+                Debug.Log("3 stars!");
+            }
+            else if(questions <= 7)
+            {
+                stars[0].color = Color.white;
+                stars[1].color = Color.white;
+                stars[2].color = new Color(0.32f, 0.32f, 0.32f);
+                Debug.Log("2 stars!");
+            }
+            else
+            {
+                stars[0].color = Color.white;
+                stars[1].color = new Color(0.32f, 0.32f, 0.32f);
+                stars[2].color = new Color(0.32f, 0.32f, 0.32f);
+                Debug.Log("1 star!");
+            }
+
         }
         else
         {
             boxes[index].GetComponent<Image>().sprite = crossImage;
+            stars[0].color = new Color(0.32f, 0.32f, 0.32f);
+            stars[1].color = new Color(0.32f, 0.32f, 0.32f);
+            stars[2].color = new Color(0.32f, 0.32f, 0.32f);
             cellValues[index] = 1;
         }
 
