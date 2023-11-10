@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     [Header("Windows")]
     [SerializeField] GameObject gameWindow;
     [SerializeField] GameObject gameOverWindow;
+    [SerializeField] GameObject pauseWindow;
     [SerializeField] TextMeshProUGUI winMessage;
 
     [Header("Window Btns")]
@@ -55,7 +56,7 @@ public class GameController : MonoBehaviour
     private void Awake() {
         gameWindow.SetActive(true);
         gameOverWindow.SetActive(false);
-
+        pauseWindow.SetActive(false);
         for(int i=0; i<9; i++)
         {
             boxes[i] = GameObject.Find("Token (" + (i+1) + ")").GetComponent<Button>();
@@ -188,6 +189,14 @@ public class GameController : MonoBehaviour
     public void Pause()
     {
         quiz.PauseTimer();
+        pauseWindow.SetActive(true);
         Debug.Log("Pause called");
+    }
+
+    public void Resume()
+    {
+        quiz.ResumeTimer();
+        pauseWindow.SetActive(false);
+        Debug.Log("Resume called");
     }
 }

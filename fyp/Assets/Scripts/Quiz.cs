@@ -203,5 +203,9 @@ public class Quiz : MonoBehaviour
         timer.onPause = true;
     }
 
+    public void ResumeTimer()
+    {
+        timer.onPause = false;
+    }
 
 }
