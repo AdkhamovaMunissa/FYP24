@@ -90,6 +90,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Compliance_R2/MG2_intro_2.unity
     guid: f0018270e433844deb51ea3b348e99aa
   - enabled: 1
+    path: Assets/Scenes/Stage1_rounds.unity
+    guid: 2f959bc166d394bccb63540a2f3b9fa8
+  - enabled: 1
     path: Assets/Scenes/Compliance_R2/MiniGame2_2.unity
     guid: fae1405706b8340f89cd5df9c9d2f357
+  - enabled: 1
+    path: Assets/Scenes/Compliance_R1/Round1_gameIntro 1.unity
+    guid: 71e8dfe340f3842798076a404876e532
+  - enabled: 1
+    path: Assets/Scenes/Compliance_R1/Stage2quiz.unity
+    guid: fa3e3c9d480734cada0382e214856ce9
   m_configObjects: {}

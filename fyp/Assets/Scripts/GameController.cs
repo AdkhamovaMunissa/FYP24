@@ -17,8 +17,10 @@ public class GameController : MonoBehaviour
     [SerializeField] GameObject gameWindow;
     [SerializeField] GameObject gameOverWindow;
     [SerializeField] TextMeshProUGUI winMessage;
+    // [SerializeField] Button CloseBtn;
     
     static Quiz quiz;
+    public CloseWindow closeWindow;
     static TimerController timer;
 
 
@@ -151,7 +153,7 @@ public class GameController : MonoBehaviour
         
         SetGrid(false);
 
-        gameWindow.SetActive(false);
+        //gameWindow.SetActive(false);
         gameOverWindow.SetActive(true);
 
         if(winner == 0)
@@ -171,6 +173,13 @@ public class GameController : MonoBehaviour
         {
             boxes[i].enabled = state;
         }
+    }
+
+    public void ChangeWindow()
+    {
+        closeWindow = gameOverWindow.GetComponent<CloseWindow>();
+        closeWindow.SetWindow();
+        // windowToShow.SetActive(true);
     }
 
     
