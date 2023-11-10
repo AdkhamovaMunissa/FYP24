@@ -17,6 +17,9 @@ public class GameController : MonoBehaviour
     [SerializeField] GameObject gameWindow;
     [SerializeField] GameObject gameOverWindow;
     [SerializeField] TextMeshProUGUI winMessage;
+
+    [Header("Window Btns")]
+    [SerializeField] Button pauseBtn;
     // [SerializeField] Button CloseBtn;
     
     static Quiz quiz;
@@ -182,5 +185,9 @@ public class GameController : MonoBehaviour
         // windowToShow.SetActive(true);
     }
 
-    
+    public void Pause()
+    {
+        quiz.PauseTimer();
+        Debug.Log("Pause called");
+    }
 }

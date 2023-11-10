@@ -12,10 +12,14 @@ public class TimerController : MonoBehaviour
 
     public bool isAnsweringQuestion;
     public float timerValue;
+    public bool onPause = false;
 
     void Update()
     {
-        UpdateTimer();
+        if(!onPause){
+           UpdateTimer(); 
+        }
+        
         Debug.Log("Answering: " + isAnsweringQuestion);
     }
 

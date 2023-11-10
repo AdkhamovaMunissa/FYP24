@@ -198,7 +198,10 @@ public class Quiz : MonoBehaviour
         }
     }
 
-    
+    public void PauseTimer()
+    {
+        timer.onPause = true;
+    }
 
 
 }
