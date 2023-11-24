@@ -1305,10 +1305,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome new hires!! '
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1554,10 +1554,10 @@ RectTransform:
   m_Father: {fileID: 258832896}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.102791384}
-  m_AnchorMax: {x: 0.9806979, y: 0.102791384}
-  m_AnchoredPosition: {x: 50.650024, y: 61.01001}
-  m_SizeDelta: {x: -552.4, y: 354}
+  m_AnchorMin: {x: 0.0805625, y: 0.036000002}
+  m_AnchorMax: {x: 0.8601044, y: 0.35837036}
+  m_AnchoredPosition: {x: 79.5, y: -1}
+  m_SizeDelta: {x: -165.40002, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807662268
 MonoBehaviour:
