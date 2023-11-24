@@ -69,10 +69,6 @@ public class DialogManagerEmp : MonoBehaviour
                 
             }
         }
-        else
-        {
-            
-        }
     }
 
     IEnumerator WriteSentence(TextMeshProUGUI dialogueText)
