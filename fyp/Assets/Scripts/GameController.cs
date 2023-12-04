@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class GameController : MonoBehaviour
 {
@@ -75,6 +76,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int winner = -1;
         for(int player = 0; player < 2; player++){
 
             // Check rows
@@ -82,6 +84,7 @@ public class GameController : MonoBehaviour
             {
                 if (cellValues[row] == player && cellValues[row + 1] == player && cellValues[row + 2] == player)
                 {
+                    winner = player;
                     Debug.Log("Player " + player + "wins"); // Player has won in the current row
                     GameOver(player);
                 }
@@ -92,6 +95,7 @@ public class GameController : MonoBehaviour
             {
                 if (cellValues[col] == player && cellValues[col + 3] == player && cellValues[col + 6] == player)
                 {
+                    winner = player;
                     Debug.Log("Player " + player + "wins"); // Player has won in the current column
                     GameOver(player);
                 }
@@ -101,9 +105,16 @@ public class GameController : MonoBehaviour
             if ((cellValues[0] == player && cellValues[4] == player && cellValues[8] == player) ||
                 (cellValues[2] == player && cellValues[4] == player && cellValues[6] == player))
             {
+                winner = player;
                 Debug.Log("Player " + player + "wins"); // Player has won in any of the diagonals
                 GameOver(player);
             }
+        }
+        
+        if(!cellValues.Contains(-1) && winner == -1)
+        {
+            Debug.Log("It is a tie!");
+            GameOver(-1);
         }
 
 
@@ -121,17 +132,6 @@ public class GameController : MonoBehaviour
                 boxes[index].GetComponent<Image>().enabled = true;
                 Debug.Log("Box " + (index+1) + " has been assigned correctly with a Button component.");
                 Debug.Log("isAnswering questions " + quiz.timer.isAnsweringQuestion);
-                
-                // if(quiz.answeredCorrectly)
-                // {
-                //     boxes[index].GetComponent<Image>().sprite = tickImage;
-                //     cellValues[index] = 0;
-                // }
-                // else
-                // {
-                //     boxes[index].GetComponent<Image>().sprite = crossImage;
-                //     cellValues[index] = 1;
-                // }
 
             }
             else if (cellValues[index] >= 0){
@@ -154,6 +154,52 @@ public class GameController : MonoBehaviour
             boxes[index].GetComponent<Image>().sprite = tickImage;
             cellValues[index] = 0;
 
+            // if(questions <= 4)
+            // {
+            //     stars[0].color = Color.white;
+            //     stars[1].color = Color.white;
+            //     stars[2].color = Color.white;
+            //     Debug.Log("3 stars!");
+            // }
+            // else if(questions <= 7)
+            // {
+            //     stars[0].color = Color.white;
+            //     stars[1].color = Color.white;
+            //     stars[2].color = new Color(0.32f, 0.32f, 0.32f);
+            //     Debug.Log("2 stars!");
+            // }
+            // else
+            // {
+            //     stars[0].color = Color.white;
+            //     stars[1].color = new Color(0.32f, 0.32f, 0.32f);
+            //     stars[2].color = new Color(0.32f, 0.32f, 0.32f);
+            //     Debug.Log("1 star!");
+            // }
+
+        }
+        else
+        {
+            boxes[index].GetComponent<Image>().sprite = crossImage;
+            // stars[0].color = new Color(0.32f, 0.32f, 0.32f);
+            // stars[1].color = new Color(0.32f, 0.32f, 0.32f);
+            // stars[2].color = new Color(0.32f, 0.32f, 0.32f);
+            cellValues[index] = 1;
+        }
+
+        SetGrid(true);
+    }
+
+    public void GameOver(int winner) {
+        
+        SetGrid(false);
+
+        //gameWindow.SetActive(false);
+        gameOverWindow.SetActive(true);
+        int questions = 9 - quiz.questions.Count;
+
+        if(winner == 0)
+        {
+            winMessage.text = "Congratulations! You mastered this round!";
             if(questions <= 4)
             {
                 stars[0].color = Color.white;
@@ -175,35 +221,22 @@ public class GameController : MonoBehaviour
                 stars[2].color = new Color(0.32f, 0.32f, 0.32f);
                 Debug.Log("1 star!");
             }
-
         }
-        else
+        else if (winner == 1)
         {
-            boxes[index].GetComponent<Image>().sprite = crossImage;
+            winMessage.text = "Sorry, you lost :(";
             stars[0].color = new Color(0.32f, 0.32f, 0.32f);
             stars[1].color = new Color(0.32f, 0.32f, 0.32f);
             stars[2].color = new Color(0.32f, 0.32f, 0.32f);
-            cellValues[index] = 1;
-        }
-
-        SetGrid(true);
-    }
-
-    public void GameOver(int winner) {
-        
-        SetGrid(false);
-
-        //gameWindow.SetActive(false);
-        gameOverWindow.SetActive(true);
-
-        if(winner == 0)
-        {
-            winMessage.text = "Congratulations! You mastered this round!";
         }
         else 
         {
-            winMessage.text = "Sorry, you lost :(";
+            winMessage.text = "It's a tie. Try again?";
+            stars[0].color = new Color(0.32f, 0.32f, 0.32f);
+            stars[1].color = new Color(0.32f, 0.32f, 0.32f);
+            stars[2].color = new Color(0.32f, 0.32f, 0.32f);
         }
+        Debug.Log("Questions: " + quiz.questions.Count);
 
     }
 
