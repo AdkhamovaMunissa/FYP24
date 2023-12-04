@@ -806,7 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1893849355}
   Sentences:
-  - Congatulations!!
+  - Congratulations!!
   - Now, back to learning!
   Index: 0
   DialogueSpeed: 0.02
