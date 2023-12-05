@@ -317,7 +317,7 @@ MonoBehaviour:
   - Sure, let me go through the objectives of detrimental compliance with you
   currentSpeaker: 00000000000000000100000001000000
   Index: 0
-  DialogueSpeed: 0
+  DialogueSpeed: 0.01
   dialogBoxManager: {fileID: 1020570736}
   dialogBoxEmp: {fileID: 297731456}
 --- !u!1 &342304277
