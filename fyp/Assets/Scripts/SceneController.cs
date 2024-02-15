@@ -95,11 +95,6 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Round1.4-regulatory 2");  
     }
 
-    public void Round1_gameIntro()
-    {
-        SceneManager.LoadScene("Round1_gameIntro 1");
-    }
-
     public void Round2Scene()
     {
         SceneManager.LoadScene("Round2-detrimental");  
@@ -165,10 +160,10 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Stage1quiz");
     }
 
-    // public void Round1_gameIntro()
-    // {
-    //     SceneManager.LoadScene("Round1_gameIntro");
-    // }
+    public void Round1_gameIntro()
+    {
+        SceneManager.LoadScene("Round1_gameIntro");
+    }
 
     public void Stage2quiz()
     {

@@ -9,7 +9,7 @@ public class Quiz : MonoBehaviour
 {
     [Header("Questions")]
     [SerializeField] TextMeshProUGUI questionText;
-    public List<QuestionSO> questions = new List<QuestionSO>();
+    [SerializeField] List<QuestionSO> questions = new List<QuestionSO>();
     QuestionSO currentQuestion;
 
     [Header("Answers")]

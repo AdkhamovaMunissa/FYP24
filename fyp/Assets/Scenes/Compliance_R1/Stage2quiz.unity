@@ -3022,7 +3022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Regulatory Compliance Quiz
+  m_text: Detrimental Compliance Quiz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -5290,7 +5290,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1957343439}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: Stage2quiz
+        m_MethodName: Stage1quiz
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

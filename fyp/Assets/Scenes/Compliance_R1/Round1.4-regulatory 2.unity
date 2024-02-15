@@ -206,19 +206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 59611769}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 743075953}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: Round1_gameIntro
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &59611769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,7 +516,6 @@ GameObject:
   - component: {fileID: 743075951}
   - component: {fileID: 743075950}
   - component: {fileID: 743075952}
-  - component: {fileID: 743075953}
   m_Layer: 0
   m_Name: Scene Manager (Empty)
   m_TagString: Untagged
@@ -578,20 +565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1548918546}
   startBtn: {fileID: 59611766}
---- !u!114 &743075953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743075949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c5a2dcd68c47404dbe7972d95ff22cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introScene: {fileID: 0}
-  round2Scene: {fileID: 0}
 --- !u!1 &919391820
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,8 +697,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
