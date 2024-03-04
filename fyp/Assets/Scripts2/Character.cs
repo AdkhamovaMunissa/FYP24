@@ -30,11 +30,13 @@ public class Character : MonoBehaviour
     
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
+    Animator myAnimator;
     
     void Start()
     {
         
         myRigidbody = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -42,6 +44,10 @@ public class Character : MonoBehaviour
         
         Run();
         FlipCharacter();
+
+        bool playerHasSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon || Mathf.Abs(myRigidbody.velocity.y) > Mathf.Epsilon;
+        myAnimator.SetBool("isMoving", playerHasSpeed);
+
     }
 
     void OnMove(InputValue value)
