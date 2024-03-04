@@ -41,6 +41,7 @@ public class Character : MonoBehaviour
     {
         
         Run();
+        FlipCharacter();
     }
 
     void OnMove(InputValue value)
@@ -54,5 +55,16 @@ public class Character : MonoBehaviour
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, moveInput.y * runSpeed);
         myRigidbody.velocity = playerVelocity;
     }
+
+    void FlipCharacter()
+    {
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+
+        if (playerHasHorizontalSpeed)
+        {
+            transform.localScale = new Vector2 (Mathf.Sign(myRigidbody.velocity.x) *  Mathf.Abs(transform.localScale.x), transform.localScale.y);
+        }
+    }
+
 
 }
