@@ -4626,9 +4626,10 @@ GameObject:
   - component: {fileID: 827105588}
   - component: {fileID: 827105587}
   - component: {fileID: 827105589}
-  - component: {fileID: 827105591}
   - component: {fileID: 827105592}
   - component: {fileID: 827105593}
+  - component: {fileID: 827105594}
+  - component: {fileID: 827105595}
   m_Layer: 0
   m_Name: character
   m_TagString: Untagged
@@ -4677,7 +4678,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: -2071505560, guid: 5d8a378e38eac41e9ae613a6c205af48, type: 3}
+  m_Sprite: {fileID: -844209754, guid: 5ee0c390d365842dd921339fa99d197e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4696,8 +4697,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827105586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.2963, y: -2.6638, z: 0}
-  m_LocalScale: {x: 1.2001374, y: 1.1151817, z: 1}
+  m_LocalPosition: {x: -10.9882, y: -3.0988, z: 0}
+  m_LocalScale: {x: 2.1199226, y: 1.6589442, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4715,43 +4716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e8a137930474b4f9c72303aa1794be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steerSpeed: 1
-  moveSpeed: 0.01
---- !u!70 &827105591
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827105586}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.013241097, y: -0.46505073}
-  m_Size: {x: 1.2005538, y: 1.267046}
-  m_Direction: 0
+  runSpeed: 10
 --- !u!50 &827105592
 Rigidbody2D:
   serializedVersion: 4
@@ -4811,19 +4776,70 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.77862614}
+  m_Offset: {x: -0.11970559, y: -0.5710263}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 2.14}
+    oldSize: {x: 0.67, y: 1.6}
     newSize: {x: 1.28, y: 2.14}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.5827476}
+  m_Size: {x: 0.59597003, y: 0.64830583}
   m_EdgeRadius: 0
+--- !u!95 &827105594
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827105586}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9cfbe56bf8cf148c1812bacd2fbdf392, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &827105595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827105586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: d5d4d94727c384f84bb4eb6a922045e2, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &828948261
 GameObject:
   m_ObjectHideFlags: 0
@@ -10061,7 +10077,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.597432
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
