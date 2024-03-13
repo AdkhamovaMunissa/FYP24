@@ -5,38 +5,27 @@ using UnityEngine.InputSystem;
 public class Character : MonoBehaviour
 {
 
-    // [SerializeField] float steerSpeed = 1f;
-    // [SerializeField] float moveSpeed = 0.01f;
-
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-        
-    // }
-
-    // // Update is called once per frame
-    // void Update()
-    // {
-        
-    //     float moveAmountx = Input.GetAxis("Horizontal") * moveSpeed;
-    //     float moveAmounty = Input.GetAxis("Vertical") * moveSpeed;
-    //     transform.Rotate(0, 0, 0);
-    //     transform.Translate(0, moveAmounty, 0);
-    //     transform.Translate(moveAmountx, 0, 0);
-
-    // }
-
     [SerializeField] float runSpeed = 10f;
     
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     Animator myAnimator;
+
+
+    public Transform targetPosition;
+
+    private bool gameStarted = false;
     
     void Start()
     {
         
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+
+        // transform.position = targetPosition.position;
+        // myAnimator.SetBool("isMoving", true);
+        // transform.position = Vector3.MoveTowards(transform.position, targetPosition.position, runSpeed * Time.deltaTime);
+        // myAnimator.SetBool("isMoving", false);
     }
 
     void Update()
