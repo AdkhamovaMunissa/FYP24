@@ -53,12 +53,25 @@ public class Character : MonoBehaviour
 
     void FlipCharacter()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        // bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
 
-        if (playerHasHorizontalSpeed)
-        {
-            transform.localScale = new Vector2 (Mathf.Sign(myRigidbody.velocity.x) *  Mathf.Abs(transform.localScale.x), transform.localScale.y);
-        }
+        // if (playerHasHorizontalSpeed)
+        // {
+        //     transform.localScale = new Vector2 (Mathf.Sign(myRigidbody.velocity.x) *  Mathf.Abs(transform.localScale.x), transform.localScale.y);
+        // }
+
+        float angle = transform.rotation.eulerAngles.z;
+
+        if (moveInput.x < 0f) // Left
+            angle = 270f;
+        else if (moveInput.x > 0f) // Right
+            angle = 90f;
+        else if (moveInput.y > 0f) // Up
+            angle = 180f;
+        else if (moveInput.y < 0f) // Down
+            angle = 360f;
+
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, angle);
     }
 
 
