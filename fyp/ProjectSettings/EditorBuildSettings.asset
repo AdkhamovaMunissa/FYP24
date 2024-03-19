@@ -102,12 +102,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Compliance_R1/Stage2quiz.unity
     guid: fa3e3c9d480734cada0382e214856ce9
   - enabled: 1
-    path: Assets/Scenes/safety_training/Scene 1.unity
+    path: Assets/Scenes/safety_training/3_Scene1.unity
     guid: a82a311723e8747ef9fc1f6475b82e44
   - enabled: 1
-    path: Assets/Scenes/safety_training/Scene 2.unity
+    path: Assets/Scenes/safety_training/4_Scene2.unity
     guid: 50f44493c62ea4530af460d02235ddc6
   - enabled: 1
-    path: Assets/Scenes/safety_training/Scene 3.unity
+    path: Assets/Scenes/safety_training/5_Scene3.unity
     guid: 8d2d878d1c4c846a29ff542e9459c3b6
   m_configObjects: {}

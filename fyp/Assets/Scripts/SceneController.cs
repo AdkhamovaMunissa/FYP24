@@ -174,5 +174,10 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Stage2quiz");
     }
+
+    public void 1_Intro_Safety()
+    {
+        SceneManager.LoadScene("1_Intro_Safety");
+    }
     
 }
