@@ -310,12 +310,24 @@ MonoBehaviour:
   DialogueTextEmp: {fileID: 1153434545}
   DialogueTextManager: {fileID: 342304279}
   Sentences:
-  - 'Hey! It''s Toby again! Now let''s learn more about Detrimental Compliance. In
-    fact, I don''t have any idea what is it about? '
-  - Miss CompliTech, could you walk us through the objectives?
-  - Hi! Nice to see you again!
-  - Sure, let me go through the objectives of detrimental compliance with you
-  currentSpeaker: 00000000000000000100000001000000
+  - 'I''m glad to see you settling in. As part of your onboarding, today we''ll review
+    the emergency floor plan and how to react in different potential scenarios. Are
+    you ready to dive in? '
+  - Absolutely. I can't wait to learn. Miss CompliTech, I would like to know how
+    to handle emergency situations, if any.
+  - That's great to hear! Our priority is to ensure the safety and well-being of
+    everyone in the workplace.
+  - 'We will now provide you with an emergency stimulation using our office floor
+    plan making you understand the importance of being prepared for any potential
+    emergencies. '
+  - 'Yes, true. It''s important for me to familiarize myself with the emergency floor
+    plan and the steps to take in different emergency scenarios. '
+  - Excellent! We'll begin by walking you through the emergency floor plan. It highlights
+    the designated exit routes, assembly points, and locations of emergency equipment.
+  - Please understand this is just for your reference. It's crucial to know the nearest
+    exits and safe areas in case of emergencies.
+  - 'Let us begin! '
+  currentSpeaker: 0100000000000000010000000100000000000000010000000100000001000000
   Index: 0
   DialogueSpeed: 0.01
   dialogBoxManager: {fileID: 1020570736}
@@ -666,7 +678,7 @@ GameObject:
   - component: {fileID: 600793978}
   - component: {fileID: 600793977}
   m_Layer: 5
-  m_Name: Round2Canvas
+  m_Name: Intro_SafetyCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -845,7 +857,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1226110380}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: Round2ObjectivesScene
+        m_MethodName: Intro_Safety
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1007,7 +1019,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -454.6, y: 300}
+  m_AnchoredPosition: {x: -454.60004, y: 300}
   m_SizeDelta: {x: -1033.2, y: 202.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020570738
@@ -1083,7 +1095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.10778501}
   m_AnchorMax: {x: 0.89500004, y: 0.8171296}
-  m_AnchoredPosition: {x: 12.22699, y: 19.717}
+  m_AnchoredPosition: {x: 12.22699, y: 19.716995}
   m_SizeDelta: {x: -24.46, y: 39.434}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153434545
@@ -1806,7 +1818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 51, y: 5.38}
+  m_AnchoredPosition: {x: 51, y: 5.3799973}
   m_SizeDelta: {x: 214.78, y: 10.76}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &1728478482
