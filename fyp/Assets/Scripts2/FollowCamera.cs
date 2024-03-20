@@ -13,26 +13,35 @@ public class FollowCamera : MonoBehaviour
     // }
 
     [SerializeField] private GameObject thingToFollow;
-    [SerializeField] private GameObject minXAndYObject;
-    [SerializeField] private GameObject maxXAndYObject;
+    // [SerializeField] private GameObject minXAndYObject;
+    // [SerializeField] private GameObject maxXAndYObject;
+
+    private Vector2 minCameraPos;  // Minimum position for the camera
+    private Vector2 maxCameraPos;  // Maximum position for the camera
+    private Camera mainCamera;
+
 
     public Vector2 minXAndY;
     public Vector2 maxXAndY;
 
     private void Start()
     {
-        minXAndY = minXAndYObject.transform.position;
-        maxXAndY = maxXAndYObject.transform.position;
+        // minXAndY = minXAndYObject.transform.position;
+        // maxXAndY = maxXAndYObject.transform.position;
+        mainCamera = GetComponent<Camera>();
 
-        // minXAndY = new Vector2(54, 241);
-        // maxXAndY = new Vector2(1700, 926);
+        minCameraPos = mainCamera.ViewportToWorldPoint(Vector2.zero);
+        maxCameraPos = mainCamera.ViewportToWorldPoint(Vector2.one);
+
     }
 
     private void LateUpdate()
     {
         Vector3 newPosition = thingToFollow.transform.position + new Vector3(0, 0, -10);
-        newPosition.x = Mathf.Clamp(newPosition.x, minXAndY.x, maxXAndY.x);
-        newPosition.y = Mathf.Clamp(newPosition.y, minXAndY.y, maxXAndY.y);
+
+        float clampedX = Mathf.Clamp(newPosition.x, minCameraPos.x, maxCameraPos.x);
+        float clampedY = Mathf.Clamp(newPosition.y, minCameraPos.y, maxCameraPos.y);
+        Vector3 clampedCameraPos = new Vector3(clampedX, clampedY, transform.position.z);
 
         transform.position = newPosition;
     }
