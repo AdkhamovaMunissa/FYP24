@@ -19,16 +19,10 @@ public class FollowCamera : MonoBehaviour
     public Vector2 minXAndY;
     public Vector2 maxXAndY;
 
-    public Canvas canvas;
-
     private void Start()
     {
         minXAndY = minXAndYObject.transform.position;
         maxXAndY = maxXAndYObject.transform.position;
-
-        RectTransform canvasRect = canvas.GetComponent<RectTransform>();
-        Vector2 canvasMin = canvasRect.rect.min;
-        Vector2 canvasMax = canvasRect.rect.max;
 
         // minXAndY = new Vector2(54, 241);
         // maxXAndY = new Vector2(1700, 926);
