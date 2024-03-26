@@ -123,6 +123,90 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &97134380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 97134383}
+  - component: {fileID: 97134382}
+  - component: {fileID: 97134381}
+  m_Layer: 0
+  m_Name: DialogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &97134381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97134380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4e3546bea80498c99f1f28f7f72398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 97134380}
+  nextBtn: {fileID: 753552913}
+--- !u!114 &97134382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97134380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426c871396a9b4f4cb282591104af5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueTextEmp: {fileID: 1153434545}
+  DialogueTextManager: {fileID: 342304279}
+  Sentences:
+  - 'I''m glad to see you settling in. As part of your onboarding, today we''ll review
+    the emergency floor plan and how to react in different potential scenarios. Are
+    you ready to dive in? '
+  - Absolutely. I can't wait to learn. Miss CompliTech, I would like to know how
+    to handle emergency situations, if any!
+  - That's great to hear! Our priority is to ensure the safety and well-being of
+    everyone in the workplace.
+  - 'We will now provide you with an emergency stimulation using our office floor
+    plan making you understand the importance of being prepared for any potential
+    emergencies. '
+  - 'Yes, true! It''s important for me to familiarize myself with the emergency floor
+    plan and the steps to take in different emergency scenarios. '
+  - Excellent! We'll begin by walking you through the emergency floor plan. It highlights
+    the designated exit routes, assembly points, and locations of emergency equipment.
+  - Please understand this is just for your reference. It's crucial to know the nearest
+    exits and safe areas in case of emergencies.
+  - 'Let us begin! '
+  currentSpeaker: 0100000000000000010000000100000000000000010000000100000001000000
+  Index: 0
+  DialogueSpeed: 0
+  dialogBoxManager: {fileID: 1020570736}
+  dialogBoxEmp: {fileID: 297731456}
+--- !u!4 &97134383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97134380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.823901, y: -0.18698515, z: 7.1834207}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178991758
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +310,6 @@ GameObject:
   - component: {fileID: 297731457}
   - component: {fileID: 297731460}
   - component: {fileID: 297731459}
-  - component: {fileID: 297731461}
   m_Layer: 5
   m_Name: DialogBoxEmp
   m_TagString: Untagged
@@ -254,8 +337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -419.07, y: -311}
-  m_SizeDelta: {x: -1104.24, y: 215.64}
+  m_AnchoredPosition: {x: -321.83002, y: -311}
+  m_SizeDelta: {x: -909.76, y: 215.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &297731459
 MonoBehaviour:
@@ -295,43 +378,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297731456}
   m_CullTransparentMesh: 1
---- !u!114 &297731461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297731456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 426c871396a9b4f4cb282591104af5ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueTextEmp: {fileID: 1153434545}
-  DialogueTextManager: {fileID: 342304279}
-  Sentences:
-  - 'I''m glad to see you settling in. As part of your onboarding, today we''ll review
-    the emergency floor plan and how to react in different potential scenarios. Are
-    you ready to dive in? '
-  - Absolutely. I can't wait to learn. Miss CompliTech, I would like to know how
-    to handle emergency situations, if any.
-  - That's great to hear! Our priority is to ensure the safety and well-being of
-    everyone in the workplace.
-  - 'We will now provide you with an emergency stimulation using our office floor
-    plan making you understand the importance of being prepared for any potential
-    emergencies. '
-  - 'Yes, true. It''s important for me to familiarize myself with the emergency floor
-    plan and the steps to take in different emergency scenarios. '
-  - Excellent! We'll begin by walking you through the emergency floor plan. It highlights
-    the designated exit routes, assembly points, and locations of emergency equipment.
-  - Please understand this is just for your reference. It's crucial to know the nearest
-    exits and safe areas in case of emergencies.
-  - 'Let us begin! '
-  currentSpeaker: 0100000000000000010000000100000000000000010000000100000001000000
-  Index: 0
-  DialogueSpeed: 0.01
-  dialogBoxManager: {fileID: 1020570736}
-  dialogBoxEmp: {fileID: 297731456}
 --- !u!1 &342304277
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,8 +413,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.082739644, y: 0.10853739}
   m_AnchorMax: {x: 1, y: 0.86719406}
-  m_AnchoredPosition: {x: 3.2299805, y: 0}
-  m_SizeDelta: {x: -35.01, y: 0}
+  m_AnchoredPosition: {x: 40.089996, y: 2.4562988}
+  m_SizeDelta: {x: -123.67, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342304279
 MonoBehaviour:
@@ -453,7 +499,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 31.689085, y: 0, z: 0, w: 0}
+  m_margin: {x: 5.8286724, y: 0, z: -0.000091972244, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -580,7 +626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.12341265, y: 1}
   m_AnchorMax: {x: 0.12341265, y: 1}
-  m_AnchoredPosition: {x: 37, y: 4}
+  m_AnchoredPosition: {x: 67, y: 0.48238373}
   m_SizeDelta: {x: 203.05005, y: 49.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &583223707
@@ -940,7 +986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -833, y: 0}
+  m_AnchoredPosition: {x: -979, y: 0}
   m_SizeDelta: {x: 224.27, y: 4.9303}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860141800
@@ -1019,8 +1065,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -454.60004, y: 300}
-  m_SizeDelta: {x: -1033.2, y: 202.43}
+  m_AnchoredPosition: {x: -342.58002, y: 292.1}
+  m_SizeDelta: {x: -868.26, y: 218.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020570738
 MonoBehaviour:
@@ -1095,7 +1141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.10778501}
   m_AnchorMax: {x: 0.89500004, y: 0.8171296}
-  m_AnchoredPosition: {x: 12.22699, y: 19.716995}
+  m_AnchoredPosition: {x: 97.88501, y: 8.095703}
   m_SizeDelta: {x: -24.46, y: 39.434}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153434545
@@ -1181,7 +1227,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 60.78396, w: 0}
+  m_margin: {x: 41.884857, y: 15.803123, z: 2.7895432, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1232,7 +1278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8371009, y: 1}
   m_AnchorMax: {x: 0.8371009, y: 1}
-  m_AnchoredPosition: {x: -556.39, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -686, y: 0.0000076293945}
   m_SizeDelta: {x: 204.05, y: 49.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175533882
@@ -1831,8 +1877,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 51, y: 5.3799973}
-  m_SizeDelta: {x: 214.78, y: 10.76}
+  m_AnchoredPosition: {x: 46, y: 0.0000076293945}
+  m_SizeDelta: {x: 238.34, y: 30.51}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &1728478482
 MonoBehaviour:

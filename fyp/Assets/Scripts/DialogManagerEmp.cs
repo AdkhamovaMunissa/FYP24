@@ -35,6 +35,7 @@ public class DialogManagerEmp : MonoBehaviour
         dialogBoxManager = GameObject.Find("DialogBoxManager");
         dialogBoxEmp = GameObject.Find("DialogBoxEmp");
 
+        NextSentence();
         if(currentSpeaker[Index] == 1)
         {
             SetObjectsActive(dialogBoxManager, true);
@@ -45,7 +46,7 @@ public class DialogManagerEmp : MonoBehaviour
             SetObjectsActive(dialogBoxManager, false);
             SetObjectsActive(dialogBoxEmp, true);
         }
-        NextSentence();
+        
     }
 
     void NextSentence()
@@ -60,12 +61,16 @@ public class DialogManagerEmp : MonoBehaviour
                 
                 //SetObjectsActive(dialogBoxEmp, false);
             }
-            else
+            else if (currentSpeaker[Index] == 0)
             {
                 SetObjectsActive(dialogBoxEmp, true);
                 DialogueTextEmp.text = "";
                 StartCoroutine(WriteSentence(DialogueTextEmp)); 
                 //SetObjectsActive(dialogBoxManager, false);
+                
+            }
+            else 
+            {
                 
             }
         }
