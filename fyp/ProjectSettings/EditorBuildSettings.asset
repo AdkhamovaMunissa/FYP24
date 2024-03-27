@@ -117,9 +117,12 @@ EditorBuildSettings:
     path: Assets/Scenes/safety_training/Scene3.unity
     guid: 8d2d878d1c4c846a29ff542e9459c3b6
   - enabled: 1
-    path: Assets/Scenes/safety_training/WholeFloor.unity
+    path: Assets/Scenes/safety_training/FireWholeFloor.unity
     guid: 0aa0c801f7abc444ca89d7f72f2f6d4c
   - enabled: 1
     path: Assets/Scenes/safety_training/Intro_Safety.unity
     guid: 43f751ebfbf8341ffb9675c8f94b1549
+  - enabled: 1
+    path: Assets/Scenes/safety_training/Stage2_rounds.unity
+    guid: 779a85f2fcd6c499082f9464a085ae33
   m_configObjects: {}
