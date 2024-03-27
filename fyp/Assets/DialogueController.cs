@@ -50,4 +50,5 @@ public class DialogueController : MonoBehaviour
             Index++;
         nextMessageCoroutine = false;
     }
+    
 }
