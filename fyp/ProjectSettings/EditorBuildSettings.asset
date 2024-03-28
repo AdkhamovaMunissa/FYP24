@@ -105,7 +105,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Compliance_R1/Stage2quiz.unity
     guid: fa3e3c9d480734cada0382e214856ce9
   - enabled: 1
-    path: Assets/Scenes/safety_training/FloorPlan.unity
+    path: Assets/Scenes/safety_training/FireFloorPlan.unity
     guid: 9c30da14649714b8e9fca8141ddcbb63
   - enabled: 1
     path: Assets/Scenes/safety_training/Scene1.unity
