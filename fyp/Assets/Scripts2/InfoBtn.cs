@@ -95,4 +95,9 @@ public class InfoBtn : MonoBehaviour
         }
     }
 
+      public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }

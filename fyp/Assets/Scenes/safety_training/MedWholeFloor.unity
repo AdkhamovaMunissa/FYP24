@@ -744,7 +744,6 @@ GameObject:
   - component: {fileID: 474498617}
   - component: {fileID: 474498619}
   - component: {fileID: 474498618}
-  - component: {fileID: 474498620}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -869,29 +868,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474498616}
   m_CullTransparentMesh: 1
---- !u!114 &474498620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474498616}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3279b11284b134bb382e3fa9eda242f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueText: {fileID: 474498618}
-  Sentences:
-  - Welcome, new recruits! Get ready to learn the essential fire emergency actions
-    in a fun and engaging way. From understanding evacuation procedures to mastering
-    fire extinguisher techniques, we'll equip you with the knowledge to handle any
-    situation with confidence.
-  - Safety is our priority, but we believe in keeping the learning experience enjoyable.
-    So, get ready to embark on this important journey and become a valuable member
-    of our fire safety team!
-  Index: 0
-  DialogueSpeed: 0.01
 --- !u!1 &548414530
 GameObject:
   m_ObjectHideFlags: 0
