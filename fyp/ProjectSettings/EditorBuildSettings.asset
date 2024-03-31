@@ -107,7 +107,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/safety_training/FireFloorPlan.unity
     guid: 9c30da14649714b8e9fca8141ddcbb63
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/safety_training/Scene1.unity
     guid: a82a311723e8747ef9fc1f6475b82e44
   - enabled: 1
@@ -125,4 +125,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/safety_training/Stage2_rounds.unity
     guid: 779a85f2fcd6c499082f9464a085ae33
+  - enabled: 1
+    path: Assets/Scenes/safety_training/Medical.unity
+    guid: d216a7a6d6e7b46e59c5019a7aaf82f1
+  - enabled: 1
+    path: Assets/Scenes/safety_training/MedFloorPlan.unity
+    guid: 2b4fd73a382cd48eab3c0ed53ee3ebcb
+  - enabled: 1
+    path: Assets/Scenes/safety_training/MedWholeFloor 1.unity
+    guid: c5e8c92a5c8df450e83560fa8335bb15
   m_configObjects: {}
