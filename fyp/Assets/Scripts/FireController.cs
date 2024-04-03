@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class FireController : MonoBehaviour
+using UnityEngine.EventSystems;
+public class FireController : MonoBehaviour, IDropHandler
 {
     public Image image;
     public float flashDuration = 0.2f;
@@ -12,6 +13,13 @@ public class FireController : MonoBehaviour
     private Color originalColor;
     private Coroutine flashCoroutine;
 
+    public GameObject correctObject; // The correct object to be dropped on the slot
+
+    private bool AlarmActivated = false;
+
+    public Button NextBtn;
+
+
     private void Start()
     {
         // Get the original color of the image
@@ -19,6 +27,17 @@ public class FireController : MonoBehaviour
 
         // Start the flashing coroutine
         StartFlashing();
+        NextBtn.interactable = false;
+        NextBtn.image.enabled = false;
+    }
+
+    private void Update() {
+
+        if (AlarmActivated)
+        {
+            NextBtn.interactable = true;
+            NextBtn.image.enabled = true;
+        }
     }
 
     private void StartFlashing()
@@ -58,6 +77,20 @@ public class FireController : MonoBehaviour
             StopCoroutine(flashCoroutine);
             image.color = originalColor;
             isFlashing = false;
+        }
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        Debug.Log("OnDrop");
+        if (eventData.pointerDrag != null)
+        {
+            // Check if the correct object is dropped on the slot
+            if (eventData.pointerDrag.gameObject == correctObject)
+            {
+                AlarmActivated = true;
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+            }
         }
     }
 }

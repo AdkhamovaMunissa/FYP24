@@ -2913,6 +2913,7 @@ GameObject:
   - component: {fileID: 1312677849}
   - component: {fileID: 1312677851}
   - component: {fileID: 1312677850}
+  - component: {fileID: 1312677852}
   m_Layer: 5
   m_Name: DialogBox
   m_TagString: Untagged
@@ -2980,6 +2981,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312677848}
   m_CullTransparentMesh: 1
+--- !u!114 &1312677852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312677848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3279b11284b134bb382e3fa9eda242f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText: {fileID: 1375055162}
+  Sentences:
+  - Oh no! There is a fire! But don't panic, we can handle this.
+  - First, we need to activate the alarm to alert others. But wait, the smoke detectors
+    have already been activated! Their piercing sound confirms the presence of a
+    dangerous situation.
+  - Remember, time is crucial, and quick action can save lives. Stay focused and
+    let's tackle this fire together!
+  Index: 0
+  DialogueSpeed: 0
 --- !u!1 &1362555535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,7 +3225,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 87.79291, y: 24.218758, z: 63.57428, w: 27.246109}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4416,7 +4439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -185}
+  m_AnchoredPosition: {x: 0, y: -185}
   m_SizeDelta: {x: 128.12, y: 116.6462}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1923334054
