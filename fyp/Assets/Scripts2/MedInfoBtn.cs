@@ -6,19 +6,18 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class InfoBtn : MonoBehaviour
+public class MedInfoBtn : MonoBehaviour
 {
 
     public GameObject DialogBox;
     public Button toggleButton;
-
     private bool isDialogBoxActive = false;
-
     public TextMeshProUGUI DialogueText;    //reference to the text
     public string[] Sentences;  // making this string so we have multiple sentences in the dialogue
     public int Index = 0;
     public float DialogueSpeed;
     bool nextMessageCoroutine = false;
+
 
     private void Start()
     {
@@ -71,6 +70,10 @@ public class InfoBtn : MonoBehaviour
 
     public void ToggleGameObject()
     {
+        if (nextMessageCoroutine)
+        {
+            return;
+        }
         // Toggle the active state of the object
         Debug.Log("Toggle activated!");
         isDialogBoxActive = !isDialogBoxActive;

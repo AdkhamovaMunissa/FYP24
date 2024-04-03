@@ -912,7 +912,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1588360665}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5
@@ -961,6 +961,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186692899}
+  m_CullTransparentMesh: 1
+--- !u!1 &191648759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 191648760}
+  - component: {fileID: 191648762}
+  - component: {fileID: 191648761}
+  m_Layer: 5
+  m_Name: Blood
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &191648760
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191648759}
+  m_LocalRotation: {x: 0.0047510997, y: 0.006808308, z: -0.0015266065, w: 0.9999644}
+  m_LocalPosition: {x: 0, y: 0, z: -3.3426235}
+  m_LocalScale: {x: 0.58882505, y: 0.7113833, z: 0.58883333}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1419041580}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 138.09744, y: -79.63602}
+  m_SizeDelta: {x: 233.85, y: 144.59}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &191648761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191648759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: be8119ce02a7b44feab5db72f60b33df, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &191648762
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191648759}
   m_CullTransparentMesh: 1
 --- !u!1 &198572098
 GameObject:
@@ -1855,7 +1931,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -4.9122925, y: -0.000106418214, z: 0, w: -4.0876007}
+  m_margin: {x: 13.242981, y: -0.000106418214, z: 54.4657, w: -4.0876007}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2944,12 +3020,12 @@ GameObject:
   - component: {fileID: 1312677851}
   - component: {fileID: 1312677850}
   m_Layer: 5
-  m_Name: DialogBox
+  m_Name: IntroDialogBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1312677849
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2969,8 +3045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -162.07, y: -371}
-  m_SizeDelta: {x: 1551.69, y: 283.88}
+  m_AnchoredPosition: {x: -150, y: -80}
+  m_SizeDelta: {x: 1551.69, y: 650.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1312677850
 MonoBehaviour:
@@ -2985,7 +3061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0.6}
+  m_Color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0.7294118}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3123,8 +3199,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.66, y: 1.8027}
-  m_SizeDelta: {x: 1583.22, y: 233.88}
+  m_AnchoredPosition: {x: 0.74, y: -6.0099983}
+  m_SizeDelta: {x: 1491.62, y: 591.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1375055161
 MonoBehaviour:
@@ -3133,22 +3209,30 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375055159}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3279b11284b134bb382e3fa9eda242f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 1375055162}
   Sentences:
-  - Welcome, new recruits! Get ready to learn the essential fire emergency actions
-    in a fun and engaging way. From understanding evacuation procedures to mastering
-    fire extinguisher techniques, we'll equip you with the knowledge to handle any
-    situation with confidence.
-  - Safety is our priority, but we believe in keeping the learning experience enjoyable.
-    So, get ready to embark on this important journey and become a valuable member
-    of our fire safety team!
+  - 'Throughout this training, you will learn about the essential steps to take during
+    a medical emergency in the workplace.We will follow the REAP model:                                                                            
+    1. Recognizing the Warning Signs:  Identifying signs and symptoms of a medical
+    emergency and understanding when to take action.                                                                                         
+    2.  Activating Emergency Medical Services (EMS): Knowing how to promptly call
+    for professional medical assistance, providing accurate information about the
+    situation, and following any established company protocols. '
+  - '3. Providing Immediate First Aid: Administering basic first aid techniques,
+    such as CPR (Cardiopulmonary Resuscitation), using an AED (Automated External
+    Defibrillator), controlling bleeding, or stabilizing the injured person''s condition.                                                                  
+    -CPR is a lifesaving technique that help save a life during cardiac arrest, when
+    the heart stops beating.                                                        
+    - AED is used to help those experiencing sudden cardiac arrest. '
+  - 'By completing this corporate emergency training module, you will gain the knowledge
+    and skills necessary to respond effectively in medical emergency situations. '
   Index: 0
-  DialogueSpeed: 0.01
+  DialogueSpeed: 0
 --- !u!114 &1375055162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3232,7 +3316,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -4.9122925, y: 0, z: 0, w: 0}
+  m_margin: {x: 3.052309, y: 0.000045344364, z: 7.9646606, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3516,6 +3600,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391865933}
   m_CullTransparentMesh: 1
+--- !u!1 &1419041579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419041580}
+  - component: {fileID: 1419041582}
+  - component: {fileID: 1419041581}
+  m_Layer: 5
+  m_Name: Person
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1419041580
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419041579}
+  m_LocalRotation: {x: -0.0047510997, y: -0.006808308, z: 0.0015266065, w: 0.9999644}
+  m_LocalPosition: {x: 0, y: 0, z: 1.42}
+  m_LocalScale: {x: 1.6983, y: 1.4056829, z: 1.6983}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 191648760}
+  m_Father: {fileID: 2069956169}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: -0.543, y: -0.781, z: 0.179}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -521.12, y: -373.98}
+  m_SizeDelta: {x: 431.74, y: 367.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1419041581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419041579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 77ab7ccd70aad4dfa9579231421bd33f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1419041582
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419041579}
+  m_CullTransparentMesh: 1
 --- !u!1 &1444406532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,7 +3695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1444406533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3600,9 +3761,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1754022792}
-        m_TargetAssemblyTypeName: InfoBtn, Assembly-CSharp
-        m_MethodName: RestartScene
+      - m_Target: {fileID: 1754022796}
+        m_TargetAssemblyTypeName: MedInfoBtn, Assembly-CSharp
+        m_MethodName: BackBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3874,6 +4035,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d98499d57f74bd6a731346a24f2c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1588360664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1588360666}
+  - component: {fileID: 1588360665}
+  m_Layer: 0
+  m_Name: SceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1588360665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588360664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8caca12c9559431a9ae0fae546c5fbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1588360666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588360664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1615032572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4076,7 +4281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 813, y: 151}
+  m_AnchoredPosition: {x: 797, y: -311}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1703505707
@@ -4122,7 +4327,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1703505708}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1588360665}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Med1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1703505708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4173,7 +4390,7 @@ GameObject:
   - component: {fileID: 1746321175}
   - component: {fileID: 1746321174}
   m_Layer: 5
-  m_Name: DialogBox-info
+  m_Name: InfoDialogBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4251,7 +4468,7 @@ GameObject:
   - component: {fileID: 1754022795}
   - component: {fileID: 1754022794}
   - component: {fileID: 1754022793}
-  - component: {fileID: 1754022792}
+  - component: {fileID: 1754022796}
   - component: {fileID: 1754022791}
   m_Layer: 5
   m_Name: InfoBtn
@@ -4298,30 +4515,6 @@ MonoBehaviour:
   noteText: {fileID: 7189844}
   background: {fileID: 141799965}
   hintNote: Instructions
---- !u!114 &1754022792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754022789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e361fd18677f4df7a9e228007ede5a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogBox: {fileID: 1746321172}
-  toggleButton: {fileID: 1754022793}
-  DialogueText: {fileID: 549893698}
-  Sentences:
-  - Welcome to the Medical Emergency Training! In this module, we will provide an
-    overview of medical emergencies and equip you with essential knowledge and skills
-    to handle such situations effectively. Medical emergencies can occur unexpectedly
-    in any workplace, and being prepared to respond promptly and appropriately can
-    make a significant difference in saving lives. Let's explore the key concepts
-    and principles of medical emergencies.
-  Index: 0
-  DialogueSpeed: 0.01
 --- !u!114 &1754022793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4366,8 +4559,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1754022792}
-        m_TargetAssemblyTypeName: InfoBtn, Assembly-CSharp
+      - m_Target: {fileID: 1754022796}
+        m_TargetAssemblyTypeName: MedInfoBtn, Assembly-CSharp
         m_MethodName: ToggleGameObject
         m_Mode: 1
         m_Arguments:
@@ -4416,6 +4609,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754022789}
   m_CullTransparentMesh: 1
+--- !u!114 &1754022796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754022789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671da51817360425d8db100823e51e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogBox: {fileID: 1746321172}
+  toggleButton: {fileID: 1754022793}
+  DialogueText: {fileID: 549893698}
+  Sentences:
+  - Welcome to the Medical Emergency Training! In this module, we will provide an
+    overview of medical emergencies and equip you with essential knowledge and skills
+    to handle such situations effectively. Medical emergencies can occur unexpectedly
+    in any workplace, and being prepared to respond promptly and appropriately can
+    make a significant difference in saving lives. Let's explore the key concepts
+    and principles of medical emergencies.
+  Index: 0
+  DialogueSpeed: 0.01
 --- !u!1 &1877047005
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,6 +5123,7 @@ RectTransform:
   m_Children:
   - {fileID: 1636278485}
   - {fileID: 2032631019}
+  - {fileID: 1419041580}
   - {fileID: 1312677849}
   - {fileID: 147135974}
   m_Father: {fileID: 0}
