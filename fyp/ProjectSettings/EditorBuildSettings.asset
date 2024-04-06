@@ -114,6 +114,9 @@ EditorBuildSettings:
     path: Assets/Scenes/safety_training/Fire/FireRoom.unity
     guid: 50f44493c62ea4530af460d02235ddc6
   - enabled: 1
+    path: Assets/Scenes/safety_training/Fire/FireRoom 1.unity
+    guid: 37de5a1e5782b4bd8bdd47b1694f716d
+  - enabled: 1
     path: Assets/Scenes/safety_training/Scene3.unity
     guid: 8d2d878d1c4c846a29ff542e9459c3b6
   - enabled: 1

@@ -21,8 +21,21 @@ public class FireController : MonoBehaviour
     public Button NextBtn;
 
 
+    //Fields of other scripts
+    public GameObject alarmSlot;
+    public GameObject dialogBox;
+    CheckDrop checkDrop;
+    DialogueController dialogController;
+
+
+
     private void Start()
     {
+        checkDrop = alarmSlot.GetComponent<CheckDrop>();
+        dialogController = dialogBox.GetComponent<DialogueController>();
+
+        Debug.Log("alarmActivated: " + checkDrop.OnDropSuccess);
+
         // Get the original color of the image
         originalColor = image.color;
 
@@ -36,7 +49,7 @@ public class FireController : MonoBehaviour
 
     private void Update() {
 
-        if (AlarmActivated)
+        if (checkDrop.OnDropSuccess && dialogController.Index == dialogController.Sentences.Length)
         {
             NextBtn.interactable = true;
             NextBtn.image.enabled = true;
