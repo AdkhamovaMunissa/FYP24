@@ -11,6 +11,7 @@ public class FireController2 : MonoBehaviour
     public Button RightBtn;
     public Button LeftBtn;
     public GameObject FireExtinguisher;
+    public GameObject FireExSlot;
     
 
     public string step;
@@ -19,6 +20,7 @@ public class FireController2 : MonoBehaviour
     private bool videoPlaying = false;
     public GameObject dialogBoxStep1;
     DialogueController dialogController1;
+    RotateObject rotateObject;
   
     void Start()
     {
@@ -32,8 +34,8 @@ public class FireController2 : MonoBehaviour
         VideoBtn.image.enabled = false;
 
         dialogController1 = dialogBoxStep1.GetComponent<DialogueController>();
-        
-        
+        rotateObject = FireExSlot.GetComponent<RotateObject>();
+           
     }
 
     // Update is called once per frame
@@ -44,13 +46,19 @@ public class FireController2 : MonoBehaviour
         {
             VideoBtn.interactable = true;
             VideoBtn.image.enabled = true;
+            //rotateObject.enabled = true;
+            if(rotateObject.placedCorrectly)
+            {
+                NextBtn.interactable = true;
+                NextBtn.image.enabled = true;
+
+                RightBtn.interactable = false;
+                LeftBtn.interactable = false;
+                
+            }
         }
 
-        if (true)
-        {
-            NextBtn.interactable = true;
-            NextBtn.image.enabled = true;
-        }
+        
     }
 
     public void ToggleVideoPlayback()
@@ -68,6 +76,16 @@ public class FireController2 : MonoBehaviour
         {
             videoRawImage.enabled = false;
             videoPlayerObject.SetActive(false);
+        }
+    }
+
+    private void HideAllChildren(GameObject parent)
+    {
+        Renderer[] renderers = parent.GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer renderer in renderers)
+        {
+            renderer.enabled = false;
         }
     }
 
