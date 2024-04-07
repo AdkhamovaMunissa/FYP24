@@ -8,13 +8,17 @@ public class FireController1 : MonoBehaviour
 {
     public Button NextBtn;
     public Button VideoBtn;
+    public GameObject extinguishSlot;
+    public Button PinBtn;
+    public string step;
     public RawImage videoRawImage;
     public GameObject videoPlayerObject;
     private bool videoPlaying = false;
     public GameObject dialogBoxStep1;
-    public GameObject dialogBoxStep2;
+    CheckDrop checkDrop;
     DialogueController dialogController1;
-    DialogueController dialogController2;
+  
+    //DialogueController dialogController2;
     void Start()
     {
         videoRawImage.enabled = false;
@@ -27,10 +31,11 @@ public class FireController1 : MonoBehaviour
         VideoBtn.interactable = false;
         VideoBtn.image.enabled = false;
 
-        dialogBoxStep2.SetActive(false);
+        PinBtn.interactable = false;
 
+        //dialogBoxStep2.SetActive(false);
         dialogController1 = dialogBoxStep1.GetComponent<DialogueController>();
-        dialogController2 = dialogBoxStep2.GetComponent<DialogueController>();
+        checkDrop = extinguishSlot.GetComponent<CheckDrop>();
         
     }
 
@@ -38,33 +43,73 @@ public class FireController1 : MonoBehaviour
     void Update()
     {
         EventSystem.current.SetSelectedGameObject(null);
-        if (dialogController1.Index == dialogController1.Sentences.Length)
+        if (dialogController1.Index == dialogController1.Sentences.Length - 1)
         {
             VideoBtn.interactable = true;
             VideoBtn.image.enabled = true;
-            dialogBoxStep1.SetActive(false);
-            dialogBoxStep2.SetActive(true);
+        }
+
+        if (checkDrop.OnDropSuccess)
+        {
+            StartCoroutine(FadeOutButton());
+            NextBtn.interactable = true;
+            NextBtn.image.enabled = true;
         }
     }
 
     public void ToggleVideoPlayback()
     {
         videoPlaying = !videoPlaying;
+        
 
         if (videoPlaying)
         {
-            // Enable the RawImage component to make the video appear
-            //ActionScreen.enabled = true;
             videoRawImage.enabled = true;
             videoPlayerObject.SetActive(true);
-            // TODO: Play the video
+            
         }
         else
         {
             // Disable the RawImage component to hide the video
             videoRawImage.enabled = false;
             videoPlayerObject.SetActive(false);
-            // TODO: Stop or pause the video
         }
+    }
+
+    public void RemovePin()
+    {
+        Debug.Log("PinBtn is clicked");
+        StartCoroutine(FadeOutButton());
+    }
+
+    private System.Collections.IEnumerator FadeOutButton()
+    {
+        float duration = 4f;
+        float currentTime = 0f;
+
+        // Get the button's image component
+        Image buttonImage = PinBtn.GetComponent<Image>();
+
+        // Store the initial color and alpha value
+        Color initialColor = buttonImage.color;
+        float initialAlpha = initialColor.a;
+
+        // Calculate the target alpha value (fully transparent)
+        float targetAlpha = 0f;
+
+        while (currentTime < duration)
+        {
+            // Calculate the new alpha value based on the current time and duration
+            float newAlpha = Mathf.Lerp(initialAlpha, targetAlpha, currentTime / duration);
+
+            // Update the button's color with the new alpha value
+            buttonImage.color = new Color(initialColor.r, initialColor.g, initialColor.b, newAlpha);
+
+            currentTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Deactivate the button game object to make it disappear completely
+        PinBtn.gameObject.SetActive(false);
     }
 }
