@@ -22,6 +22,8 @@ public class DragFireExtinguisher : MonoBehaviour, IDragHandler, IBeginDragHandl
     bool buttonPressed = false;
     public float shrinkSpeed = 0.1f;
     Animator myAnimator;
+    private Vector3 initialFireScale;
+    private Vector3 initialFireOffset; 
 
 
     void Start()
@@ -34,6 +36,12 @@ public class DragFireExtinguisher : MonoBehaviour, IDragHandler, IBeginDragHandl
         parentWarning = warningText.transform.parent.gameObject;
         warningText.enabled = false;
         parentWarning.SetActive(false);
+
+        // Store the initial scale of the fire object
+        initialFireScale = fire.transform.localScale;
+
+        // Calculate the initial offset between the fire object and the initial position
+        initialFireOffset = fire.transform.position - initialPos.transform.position;
 
     }
 
