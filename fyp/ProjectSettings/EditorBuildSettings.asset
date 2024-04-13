@@ -178,11 +178,20 @@ EditorBuildSettings:
     guid: b930a11168b1343dca2883137ff4abdf
   - enabled: 1
     path: Assets/Scenes/safety_training/Med/Med7.unity
-    guid: c5b69e499c8b34614bf4c447b08782c1
-  - enabled: 1
+    guid: 33f62ecfedf1645e0a0dc2555b85406b
+  - enabled: 0
     path: Assets/Scenes/safety_training/Med/Med8.unity
     guid: 04ffb431435d84cf6942c90319d6acd2
   - enabled: 1
     path: Assets/Scenes/safety_training/Med/Congrats.unity
     guid: b465dbab8d7d542c3999bd392f5a2c7b
+  - enabled: 1
+    path: Assets/Scenes/safety_training/Med/Med5Plot2.unity
+    guid: 642834a4487b342deadc46aa3a6adfaf
+  - enabled: 1
+    path: Assets/Scenes/safety_training/Med/MedFloorPt2.unity
+    guid: fa1d228cec6db46d48d20e39559a74da
+  - enabled: 1
+    path: Assets/Scenes/safety_training/Med/MedEvacuation.unity
+    guid: 06a44ecbf2b0d4b0691e2d1f743f8cd5
   m_configObjects: {}

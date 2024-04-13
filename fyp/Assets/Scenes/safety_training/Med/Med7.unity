@@ -1636,10 +1636,10 @@ RectTransform:
   m_Father: {fileID: 446654911}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.815, y: -0.0000038146973}
-  m_SizeDelta: {x: 710.45, y: 389.13}
+  m_AnchorMin: {x: 0.56242555, y: 0.62550414}
+  m_AnchorMax: {x: 0.56242555, y: 0.62550414}
+  m_AnchoredPosition: {x: -62.907, y: -19.877}
+  m_SizeDelta: {x: 728.64, y: 389.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369861840
 MonoBehaviour:
@@ -1661,10 +1661,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- Complexion is pale, and appear visibly sweaty\n- Exhibits feeling of
-    tightness, pressure in the chest and shortness of breath\n- Begins to feel lightheaded
-    and dizzy, with a sense of impending doom\n\nJake\u2019s Condition: The symptoms
-    suggest a potential cardiac event, such as a heart attack\n"
+  m_text: "- Significant blood loss, causing blood to flow rapidly from the wound\n-
+    Visible open wound revealing underlying tissues\n- Experiencing pain at the site
+    of the injury\n\nMark\u2019s condition: The symptoms suggest, a deep cut injury\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1691,13 +1690,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43
+  m_fontSize: 42.9
   m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1727,7 +1726,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -2.0820312, y: 0, z: -56.50128, w: 16.009232}
+  m_margin: {x: -2.0820312, y: 68.3563, z: -20.524323, w: 16.009232}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2032,8 +2031,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1214.56, y: -70.79999}
-  m_SizeDelta: {x: 456.5, y: -705.4}
+  m_AnchoredPosition: {x: -1214.56, y: -15.030029}
+  m_SizeDelta: {x: 456.5, y: -816.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446654912
 MonoBehaviour:
@@ -2737,12 +2736,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ensure that the gauze swab is sterile and intended for medical use. Carefully
-    place the gauze swab over the wound, ensuring that it covers the entire area.
-    You may need to fold or cut the gauze swab to an appropriate size, depending
-    on the size of the wound.
-
-'
+  m_text: "Ensure that the bandage is secure but not overly tight. Check for any
+    signs of excessive pressure, such as numbness, tingling, or discoloration beyond
+    the bandaged area. If you notice any of these signs, loosen or readjust the bandage.
+    \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2845,7 +2842,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841750740}
   m_LocalRotation: {x: 0.004312052, y: 0.007094519, z: -0.4389023, w: 0.89849645}
-  m_LocalPosition: {x: 0, y: 0, z: -3.2225788}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 0.6595509, y: 0.6298782, z: 0.5888911}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2854,8 +2851,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33.33794, y: -180.43817}
-  m_SizeDelta: {x: 233.85, y: 144.59}
+  m_AnchoredPosition: {x: -94, y: -18}
+  m_SizeDelta: {x: 181.74, y: 107.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &841750742
 MonoBehaviour:
@@ -2921,7 +2918,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874819061}
   m_LocalRotation: {x: 0.0047510997, y: 0.006808308, z: -0.0015266065, w: 0.9999644}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 0.58882505, y: 0.7113833, z: 0.58883333}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2930,8 +2927,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 108, y: -70}
-  m_SizeDelta: {x: 233.85, y: 144.59}
+  m_AnchoredPosition: {x: -58, y: -177}
+  m_SizeDelta: {x: 474.81, y: 187.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &874819063
 MonoBehaviour:
@@ -3132,7 +3129,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Med8
+          m_StringArgument: MedEvacuation
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &979493286
@@ -4613,20 +4610,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419041579}
-  m_LocalRotation: {x: -0.004312052, y: -0.007094519, z: 0.4389023, w: 0.89849645}
-  m_LocalPosition: {x: 0, y: 0, z: 1.4197083}
-  m_LocalScale: {x: 1.6983, y: 1.4056829, z: 1.6983}
+  m_LocalRotation: {x: -0.004627882, y: -0.0068926564, z: 0.0038585823, w: 0.99995816}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 1.2779877, y: 1.0577905, z: 1.2779877}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 841750741}
   - {fileID: 874819062}
   m_Father: {fileID: 2069956169}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: -0.087, y: -0.947, z: 52.07}
+  m_LocalEulerAnglesHint: {x: -0.527, y: -0.792, z: 0.446}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -521.12, y: -373.98}
-  m_SizeDelta: {x: 431.74, y: 367.1}
+  m_AnchoredPosition: {x: -487, y: -324}
+  m_SizeDelta: {x: 390.91, y: 367.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1419041581
 MonoBehaviour:
@@ -4648,7 +4645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77ab7ccd70aad4dfa9579231421bd33f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b5025817dc724512a3ff5744540c5c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5265,10 +5262,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 33966563}
   Sentences:
-  - Notice there are visible wounds with bleeding present, use a gauze swab to apply
-    direct pressure to the bleeding site.
-  - Drag the Gauze Swab to perform the action. View the symptoms and the medication
-    instruction by clicking the respective icons.
+  - 'Once the bleeding is controlled, cover the wound with a bandage to maintain
+    pressure. '
+  - 'Drag the Bandage to perform the action. View the symptoms and the medication
+    instruction by clicking the respective icons. '
   Index: 0
   DialogueSpeed: 0
 --- !u!1 &1588360664
@@ -5728,7 +5725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7164316e49c424d1390862138c67852b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctObject: {fileID: 396623897}
+  correctObject: {fileID: 633150475}
   OnDropSuccess: 0
   WarningText: {fileID: 2038444568}
 --- !u!114 &1719118625
